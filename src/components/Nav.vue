@@ -18,7 +18,7 @@ const loggingOut = () => {
             <h1 class="tracking-tighter font-thin  text-center">
                 Genshin Impact<br>Material Calculator
             </h1>
-            <nav class="flex items-center">
+            <nav class="flex-initial items-center">
                 <ul class="flex items-center space-x-2">
                     <router-link to="/">
                         <li class="py-5 px-4 hover:cursor-pointer hover:bg-gray-300 hover:text-black">Home</li>

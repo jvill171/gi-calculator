@@ -10,13 +10,13 @@ module.exports = {
       fontFamily: {
         genshinFont: "genshinFont",
       },
-      backgroundImage: {
-        'one-star': "url=('src\assets\rarity\bg_rarity_1_star.png')",
-        'two-star': "url=('src\assets\rarity\bg_rarity_2_star.png')",
-        'three-star': "url=('src\assets\rarity\bg_rarity_3_star.png')",
-        'four-star': "url=('src\assets\rarity\bg_rarity_4_star.png')",
-        'five-star': "url=('src\assets\rarity\bg_rarity_5_star.png')",
-      }
+      backgroundImage:{
+        'oneStar': "url('./src/assets/rarity/bg_rarity_1_star.png')",
+        'twoStar': "url('./src/assets/rarity/bg_rarity_2_star.png')",
+        'threeStar': "url('./src/assets/rarity/bg_rarity_3_star.png')",
+        'fourStar': "url('./src/assets/rarity/bg_rarity_4_star.png')",
+        'fiveStar': "url('./src/assets/rarity/bg_rarity_5_star.png')",
+      },
     },
   },
   variants: {
