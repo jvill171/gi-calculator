@@ -2,9 +2,11 @@ import {createRouter, createWebHistory} from "vue-router";
 import useAuth from "./composable/useAuth";
 
 import Index from "./pages/index.vue";
-import About from "./pages/about.vue";
+import Characters from "./pages/characters.vue";
+import Weapons from "./pages/weapons.vue";
 import Login from "./pages/login.vue";
-import Secret from "./pages/secret.vue";
+import AutoCalc from "./pages/auto-calc.vue";
+import Backpack from "./pages/backpack.vue";
 import NotFound from "./pages/404.vue";
 
 const {isAuthenticated}  = useAuth();
@@ -16,9 +18,14 @@ const routes = [
         component: Index,
     },
     {
-        path: "/about",
-        name: "About",
-        component: About,
+        path: "/characters",
+        name: "Characters",
+        component: Characters,
+    },
+    {
+        path: "/weapons",
+        name: "Weapons",
+        component: Weapons,
     },
     {
         path: "/login",
@@ -26,9 +33,20 @@ const routes = [
         component: Login,
     },
     {
-        path: "/secret",
-        name: "Secret",
-        component: Secret,
+        path: "/backpack",
+        name: "Backpack",
+        component: Backpack,
+        beforeEnter: (to, from, next) => {
+            if(isAuthenticated.value){
+                next();
+            }
+            next("/login");
+        },
+    },
+    {
+        path: "/auto-calc",
+        name: "Auto-Calc",
+        component: AutoCalc,
         beforeEnter: (to, from, next) => {
             if(isAuthenticated.value){
                 next();

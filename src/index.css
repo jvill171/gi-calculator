@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "genshinFont";
+    font-weight: lighter;
+    src: url("../public/fonts/ja-jp.ttf") format("truetype"),
+      url("../public/fonts/zh-cn.ttf") format("truetype");
+  }
+}
