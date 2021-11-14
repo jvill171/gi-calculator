@@ -7,6 +7,9 @@ module.exports = {
       minHeight: {
         "screen-nonav": "calc(100vh - 88px)",
       },
+      maxWidth: {
+        '128px': '128px',
+      },
       fontFamily: {
         genshinFont: "genshinFont",
       },
