@@ -7,6 +7,7 @@ import Weapons from "./pages/weapons.vue";
 import Login from "./pages/login.vue";
 import AutoCalc from "./pages/auto-calc.vue";
 import Backpack from "./pages/backpack.vue";
+import OneCharacter from "./pages/one-character.vue"
 import NotFound from "./pages/404.vue";
 
 const {isAuthenticated}  = useAuth();
@@ -42,6 +43,17 @@ const routes = [
             }
             next("/login");
         },
+    },
+    {
+        path: "/characters/:name",
+        name: "Character",
+        component: OneCharacter,
+        // beforeEnter: (to, from, next) => {
+        //     if(isAuthenticated.value){
+        //         next();
+        //     }
+        //     next("/login");
+        // },
     },
     {
         path: "/auto-calc",
