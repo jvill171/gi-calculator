@@ -9,7 +9,7 @@ const api = axios.create({
 
 export const useAPI = () => {
   const getCharacters = async (charName) => {
-    console.log()
+    console.log();
     const response = await api.get(`/characters/${charName}`);
     console.log(response.data);
     characters.value = response.data;
@@ -18,48 +18,3 @@ export const useAPI = () => {
   getCharacters();
   return { characters, getCharacters };
 };
-
-/*
-"albedo", 
-"aloy", 
-"amber", 
-"ayaka", 
-"barbara", 
-"beidou", 
-"bennett", 
-"chongyun", 
-"diluc", 
-"diona", 
-"eula", 
-"fischl", 
-"ganyu", 
-"hu-tao", 
-"jean", 
-"kaeya", 
-"kazuha", 
-"keqing", 
-"klee", 
-"kokomi", 
-"lisa", 
-"mona", 
-"ningguang", 
-"noelle", 
-"qiqi", 
-"raiden", 
-"razor", 
-"rosaria", 
-"sara", 
-"sayu", 
-"sucrose", 
-"tartaglia", 
-"traveler-anemo",
-"traveler-electro",
-"traveler-geo", 
-"venti", 
-"xiangling", 
-"xiao", 
-"xingqiu", 
-"xinyan", 
-"yanfei", 
-"yoimiya", 
-"zhongli" */

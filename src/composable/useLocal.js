@@ -8,10 +8,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Prithiva Topaz",
       image: {
-        1: "/ascension/jewels/prithiva-topaz-sliver.png",
-        2: "/ascension/jewels/prithiva-topaz-fragment.png",
-        3: "/ascension/jewels/prithiva-topaz-chunk.png",
-        4: "/ascension/jewels/prithiva-topaz-gemstone.png",
+        levelOne: "/ascension/jewels/prithiva-topaz-sliver.png",
+        levelTwo: "/ascension/jewels/prithiva-topaz-fragment.png",
+        levelThree: "/ascension/jewels/prithiva-topaz-chunk.png",
+        levelFour: "/ascension/jewels/prithiva-topaz-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -22,18 +22,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/basalt-pillar.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Ballad",
+        image: "/ascension/talents/teachings-of-ballad.png",
+      },
+      levelTwo: {
+        name: "Guide to Ballad",
+        image: "/ascension/talents/guide-to-ballad.png",
+      },
+      levelThree: {
+        name: "Philosophies of Ballad",
+        image: "/ascension/talents/philosophies-of-ballad.png",
+      },
+    },
   },
   Aloy: {
     name: "Aloy",
     rarity: 5,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -44,6 +58,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/crystalline-bloom.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
+      },
+    },
   },
   Amber: {
     name: "Amber",
@@ -52,10 +80,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -66,18 +94,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/everflame-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
+      },
+    },
   },
   Ayaka: {
     name: "Ayaka",
     rarity: 5,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -88,6 +130,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/perpetual-heart.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Elegance",
+        image: "/ascension/talents/teachings-of-elegance.png",
+      },
+      levelTwo: {
+        name: "Guide to Elegance",
+        image: "/ascension/talents/guide-to-elegance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Elegance",
+        image: "/ascension/talents/philosophies-of-elegance.png",
+      },
+    },
   },
   Barbara: {
     name: "Barbara",
@@ -96,10 +152,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Varunada Lazurite",
       image: {
-        1: "/ascension/jewels/varunada-lazurite-sliver.png",
-        2: "/ascension/jewels/varunada-lazurite-fragment.png",
-        3: "/ascension/jewels/varunada-lazurite-chunk.png",
-        4: "/ascension/jewels/varunada-lazurite-gemstone.png",
+        levelOne: "/ascension/jewels/varunada-lazurite-sliver.png",
+        levelTwo: "/ascension/jewels/varunada-lazurite-fragment.png",
+        levelThree: "/ascension/jewels/varunada-lazurite-chunk.png",
+        levelFour: "/ascension/jewels/varunada-lazurite-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -110,6 +166,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/cleansing-heart.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
+      },
+    },
   },
   Beidou: {
     name: "Beidou",
@@ -118,10 +188,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -132,6 +202,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/lightning-prism.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Gold",
+        image: "/ascension/talents/teachings-of-gold.png",
+      },
+      levelTwo: {
+        name: "Guide to Gold",
+        image: "/ascension/talents/guide-to-gold.png",
+      },
+      levelThree: {
+        name: "Philosophies of Gold",
+        image: "/ascension/talents/philosophies-of-gold.png",
+      },
+    },
   },
   Bennett: {
     name: "Bennett",
@@ -140,10 +224,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -154,18 +238,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/everflame-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Chongyun: {
     name: "Chongyun",
     rarity: 4,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -176,6 +274,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hoarfrost-core.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Diligence",
+        image: "/ascension/talents/teachings-of-diligence.png",
+      },
+      levelTwo: {
+        name: "Guide to Diligence",
+        image: "/ascension/talents/guide-to-diligence.png",
+      },
+      levelThree: {
+        name: "Philosophies of Diligence",
+        image: "/ascension/talents/philosophies-of-diligence.png",
+      },
+    },
   },
   Diluc: {
     name: "Diluc",
@@ -184,10 +296,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -198,18 +310,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/everflame-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Diona: {
     name: "Diona",
     rarity: 4,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -220,18 +346,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hoarfrost-core.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
+      },
+    },
   },
   Eula: {
     name: "Eula",
     rarity: 5,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -242,6 +382,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/crystalline-bloom.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Fischl: {
     name: "Fischl",
@@ -250,10 +404,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -264,18 +418,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/lightning-prism.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Ballad",
+        image: "/ascension/talents/teachings-of-ballad.png",
+      },
+      levelTwo: {
+        name: "Guide to Ballad",
+        image: "/ascension/talents/guide-to-ballad.png",
+      },
+      levelThree: {
+        name: "Philosophies of Ballad",
+        image: "/ascension/talents/philosophies-of-ballad.png",
+      },
+    },
   },
   Ganyu: {
     name: "Ganyu",
     rarity: 5,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -286,6 +454,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hoarfrost-core.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Diligence",
+        image: "/ascension/talents/teachings-of-diligence.png",
+      },
+      levelTwo: {
+        name: "Guide to Diligence",
+        image: "/ascension/talents/guide-to-diligence.png",
+      },
+      levelThree: {
+        name: "Philosophies of Diligence",
+        image: "/ascension/talents/philosophies-of-diligence.png",
+      },
+    },
   },
   "Hu Tao": {
     name: "Hu Tao",
@@ -294,10 +476,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
@@ -308,6 +490,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/juvenile-jade.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Diligence",
+        image: "/ascension/talents/teachings-of-diligence.png",
+      },
+      levelTwo: {
+        name: "Guide to Diligence",
+        image: "/ascension/talents/guide-to-diligence.png",
+      },
+      levelThree: {
+        name: "Philosophies of Diligence",
+        image: "/ascension/talents/philosophies-of-diligence.png",
+      },
+    },
   },
   Jean: {
     name: "Jean",
@@ -316,10 +512,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vayuda Turquoise",
       image: {
-        1: "/ascension/jewels/vayuda-turquoise-sliver.png",
-        2: "/ascension/jewels/vayuda-turquoise-fragment.png",
-        3: "/ascension/jewels/vayuda-turquoise-chunk.png",
-        4: "/ascension/jewels/vayuda-turquoise-gemstone.png",
+        levelOne: "/ascension/jewels/vayuda-turquoise-sliver.png",
+        levelTwo: "/ascension/jewels/vayuda-turquoise-fragment.png",
+        levelThree: "/ascension/jewels/vayuda-turquoise-chunk.png",
+        levelFour: "/ascension/jewels/vayuda-turquoise-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -330,18 +526,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hurricane-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Kaeya: {
     name: "Kaeya",
     rarity: 4,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -352,6 +562,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hoarfrost-core.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Ballad",
+        image: "/ascension/talents/teachings-of-ballad.png",
+      },
+      levelTwo: {
+        name: "Guide to Ballad",
+        image: "/ascension/talents/guide-to-ballad.png",
+      },
+      levelThree: {
+        name: "Philosophies of Ballad",
+        image: "/ascension/talents/philosophies-of-ballad.png",
+      },
+    },
   },
   Kazuha: {
     name: "Kazuha",
@@ -360,10 +584,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vayuda Turquoise",
       image: {
-        1: "/ascension/jewels/vayuda-turquoise-sliver.png",
-        2: "/ascension/jewels/vayuda-turquoise-fragment.png",
-        3: "/ascension/jewels/vayuda-turquoise-chunk.png",
-        4: "/ascension/jewels/vayuda-turquoise-gemstone.png",
+        levelOne: "/ascension/jewels/vayuda-turquoise-sliver.png",
+        levelTwo: "/ascension/jewels/vayuda-turquoise-fragment.png",
+        levelThree: "/ascension/jewels/vayuda-turquoise-chunk.png",
+        levelFour: "/ascension/jewels/vayuda-turquoise-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -374,6 +598,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/maguu-kishin.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Diligence",
+        image: "/ascension/talents/teachings-of-diligence.png",
+      },
+      levelTwo: {
+        name: "Guide to Diligence",
+        image: "/ascension/talents/guide-to-diligence.png",
+      },
+      levelThree: {
+        name: "Philosophies of Diligence",
+        image: "/ascension/talents/philosophies-of-diligence.png",
+      },
+    },
   },
   Keqing: {
     name: "Keqing",
@@ -382,10 +620,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -396,6 +634,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/lightning-prism.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Prosperity",
+        image: "/ascension/talents/teachings-of-prosperity.png",
+      },
+      levelTwo: {
+        name: "Guide to Prosperity",
+        image: "/ascension/talents/guide-to-prosperity.png",
+      },
+      levelThree: {
+        name: "Philosophies of Prosperity",
+        image: "/ascension/talents/philosophies-of-prosperity.png",
+      },
+    },
   },
   Klee: {
     name: "Klee",
@@ -404,10 +656,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -418,6 +670,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/everflame-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
+      },
+    },
   },
   Kokomi: {
     name: "Kokomi",
@@ -426,10 +692,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Varunada Lazurite",
       image: {
-        1: "/ascension/jewels/varunada-lazurite-sliver.png",
-        2: "/ascension/jewels/varunada-lazurite-fragment.png",
-        3: "/ascension/jewels/varunada-lazurite-chunk.png",
-        4: "/ascension/jewels/varunada-lazurite-gemstone.png",
+        levelOne: "/ascension/jewels/varunada-lazurite-sliver.png",
+        levelTwo: "/ascension/jewels/varunada-lazurite-fragment.png",
+        levelThree: "/ascension/jewels/varunada-lazurite-chunk.png",
+        levelFour: "/ascension/jewels/varunada-lazurite-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -440,6 +706,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/dew-of-repudiation.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Transience",
+        image: "/ascension/talents/teachings-of-transience.png",
+      },
+      levelTwo: {
+        name: "Guide to Transience",
+        image: "/ascension/talents/guide-to-transience.png",
+      },
+      levelThree: {
+        name: "Philosophies of Transience",
+        image: "/ascension/talents/philosophies-of-transience.png",
+      },
+    },
   },
   Lisa: {
     name: "Lisa",
@@ -448,10 +728,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -462,6 +742,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/lightning-prism.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Ballad",
+        image: "/ascension/talents/teachings-of-ballad.png",
+      },
+      levelTwo: {
+        name: "Guide to Ballad",
+        image: "/ascension/talents/guide-to-ballad.png",
+      },
+      levelThree: {
+        name: "Philosophies of Ballad",
+        image: "/ascension/talents/philosophies-of-ballad.png",
+      },
+    },
   },
   Mona: {
     name: "Mona",
@@ -470,10 +764,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Varunada Lazurite",
       image: {
-        1: "/ascension/jewels/varunada-lazurite-sliver.png",
-        2: "/ascension/jewels/varunada-lazurite-fragment.png",
-        3: "/ascension/jewels/varunada-lazurite-chunk.png",
-        4: "/ascension/jewels/varunada-lazurite-gemstone.png",
+        levelOne: "/ascension/jewels/varunada-lazurite-sliver.png",
+        levelTwo: "/ascension/jewels/varunada-lazurite-fragment.png",
+        levelThree: "/ascension/jewels/varunada-lazurite-chunk.png",
+        levelFour: "/ascension/jewels/varunada-lazurite-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -484,6 +778,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/cleansing-heart.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Ningguang: {
     name: "Ningguang",
@@ -492,10 +800,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Prithiva Topaz",
       image: {
-        1: "/ascension/jewels/prithiva-topaz-sliver.png",
-        2: "/ascension/jewels/prithiva-topaz-fragment.png",
-        3: "/ascension/jewels/prithiva-topaz-chunk.png",
-        4: "/ascension/jewels/prithiva-topaz-gemstone.png",
+        levelOne: "/ascension/jewels/prithiva-topaz-sliver.png",
+        levelTwo: "/ascension/jewels/prithiva-topaz-fragment.png",
+        levelThree: "/ascension/jewels/prithiva-topaz-chunk.png",
+        levelFour: "/ascension/jewels/prithiva-topaz-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -506,6 +814,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/basalt-pillar.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Prosperity",
+        image: "/ascension/talents/teachings-of-prosperity.png",
+      },
+      levelTwo: {
+        name: "Guide to Prosperity",
+        image: "/ascension/talents/guide-to-prosperity.png",
+      },
+      levelThree: {
+        name: "Philosophies of Prosperity",
+        image: "/ascension/talents/philosophies-of-prosperity.png",
+      },
+    },
   },
   Noelle: {
     name: "Noelle",
@@ -514,10 +836,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Prithiva Topaz",
       image: {
-        1: "/ascension/jewels/prithiva-topaz-sliver.png",
-        2: "/ascension/jewels/prithiva-topaz-fragment.png",
-        3: "/ascension/jewels/prithiva-topaz-chunk.png",
-        4: "/ascension/jewels/prithiva-topaz-gemstone.png",
+        levelOne: "/ascension/jewels/prithiva-topaz-sliver.png",
+        levelTwo: "/ascension/jewels/prithiva-topaz-fragment.png",
+        levelThree: "/ascension/jewels/prithiva-topaz-chunk.png",
+        levelFour: "/ascension/jewels/prithiva-topaz-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -528,18 +850,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/basalt-pillar.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Qiqi: {
     name: "Qiqi",
     rarity: 5,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -550,6 +886,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hoarfrost-core.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Prosperity",
+        image: "/ascension/talents/teachings-of-prosperity.png",
+      },
+      levelTwo: {
+        name: "Guide to Prosperity",
+        image: "/ascension/talents/guide-to-prosperity.png",
+      },
+      levelThree: {
+        name: "Philosophies of Prosperity",
+        image: "/ascension/talents/philosophies-of-prosperity.png",
+      },
+    },
   },
   Raiden: {
     name: "Raiden",
@@ -558,10 +908,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
@@ -572,6 +922,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/storm-beads.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Light",
+        image: "/ascension/talents/teachings-of-light.png",
+      },
+      levelTwo: {
+        name: "Guide to Light",
+        image: "/ascension/talents/guide-to-light.png",
+      },
+      levelThree: {
+        name: "Philosophies of Light",
+        image: "/ascension/talents/philosophies-of-light.png",
+      },
+    },
   },
   Razor: {
     name: "Razor",
@@ -580,10 +944,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -594,18 +958,32 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/lightning-prism.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Resistance",
+        image: "/ascension/talents/teachings-of-resistance.png",
+      },
+      levelTwo: {
+        name: "Guide to Resistance",
+        image: "/ascension/talents/guide-to-resistance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Resistance",
+        image: "/ascension/talents/philosophies-of-resistance.png",
+      },
+    },
   },
   Rosaria: {
     name: "Rosaria",
     rarity: 4,
-    element: { name: "Cyro", image: "/elements/cryo.png" },
+    element: { name: "Cryo", image: "/elements/cryo.png" },
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/shivada-jade-sliver.png",
-        2: "/ascension/jewels/shivada-jade-fragment.png",
-        3: "/ascension/jewels/shivada-jade-chunk.png",
-        4: "/ascension/jewels/shivada-jade-gemstone.png",
+        levelOne: "/ascension/jewels/shivada-jade-sliver.png",
+        levelTwo: "/ascension/jewels/shivada-jade-fragment.png",
+        levelThree: "/ascension/jewels/shivada-jade-chunk.png",
+        levelFour: "/ascension/jewels/shivada-jade-gemstone.png",
       },
     },
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
@@ -616,6 +994,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hoarfrost-core.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Ballad",
+        image: "/ascension/talents/teachings-of-ballad.png",
+      },
+      levelTwo: {
+        name: "Guide to Ballad",
+        image: "/ascension/talents/guide-to-ballad.png",
+      },
+      levelThree: {
+        name: "Philosophies of Ballad",
+        image: "/ascension/talents/philosophies-of-ballad.png",
+      },
+    },
   },
   Sara: {
     name: "Sara",
@@ -624,10 +1016,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vajrada Amethyst",
       image: {
-        1: "/ascension/jewels/vajrada-amethyst-sliver.png",
-        2: "/ascension/jewels/vajrada-amethyst-fragment.png",
-        3: "/ascension/jewels/vajrada-amethyst-chunk.png",
-        4: "/ascension/jewels/vajrada-amethyst-gemstone.png",
+        levelOne: "/ascension/jewels/vajrada-amethyst-sliver.png",
+        levelTwo: "/ascension/jewels/vajrada-amethyst-fragment.png",
+        levelThree: "/ascension/jewels/vajrada-amethyst-chunk.png",
+        levelFour: "/ascension/jewels/vajrada-amethyst-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -635,6 +1027,20 @@ const ALL_CHARACTERS = {
     icon: "/characters_icon/sara.png",
     bossMat: { name: "", image: "" },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Elegance",
+        image: "/ascension/talents/teachings-of-elegance.png",
+      },
+      levelTwo: {
+        name: "Guide to Elegance",
+        image: "/ascension/talents/guide-to-elegance.png",
+      },
+      levelThree: {
+        name: "Philosophies of Elegance",
+        image: "/ascension/talents/philosophies-of-elegance.png",
+      },
+    },
   },
   Sayu: {
     name: "Sayu",
@@ -643,10 +1049,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vayuda Turquoise",
       image: {
-        1: "/ascension/jewels/vayuda-turquoise-sliver.png",
-        2: "/ascension/jewels/vayuda-turquoise-fragment.png",
-        3: "/ascension/jewels/vayuda-turquoise-chunk.png",
-        4: "/ascension/jewels/vayuda-turquoise-gemstone.png",
+        levelOne: "/ascension/jewels/vayuda-turquoise-sliver.png",
+        levelTwo: "/ascension/jewels/vayuda-turquoise-fragment.png",
+        levelThree: "/ascension/jewels/vayuda-turquoise-chunk.png",
+        levelFour: "/ascension/jewels/vayuda-turquoise-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -657,6 +1063,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/maguu-kishin.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Light",
+        image: "/ascension/talents/teachings-of-light.png",
+      },
+      levelTwo: {
+        name: "Guide to Light",
+        image: "/ascension/talents/guide-to-light.png",
+      },
+      levelThree: {
+        name: "Philosophies of Light",
+        image: "/ascension/talents/philosophies-of-light.png",
+      },
+    },
   },
   Sucrose: {
     name: "Sucrose",
@@ -665,10 +1085,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vayuda Turquoise",
       image: {
-        1: "/ascension/jewels/vayuda-turquoise-sliver.png",
-        2: "/ascension/jewels/vayuda-turquoise-fragment.png",
-        3: "/ascension/jewels/vayuda-turquoise-chunk.png",
-        4: "/ascension/jewels/vayuda-turquoise-gemstone.png",
+        levelOne: "/ascension/jewels/vayuda-turquoise-sliver.png",
+        levelTwo: "/ascension/jewels/vayuda-turquoise-fragment.png",
+        levelThree: "/ascension/jewels/vayuda-turquoise-chunk.png",
+        levelFour: "/ascension/jewels/vayuda-turquoise-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -679,6 +1099,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hurricane-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
+      },
+    },
   },
   Tartaglia: {
     name: "Tartaglia",
@@ -687,10 +1121,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Varunada Lazurite",
       image: {
-        1: "/ascension/jewels/varunada-lazurite-sliver.png",
-        2: "/ascension/jewels/varunada-lazurite-fragment.png",
-        3: "/ascension/jewels/varunada-lazurite-chunk.png",
-        4: "/ascension/jewels/varunada-lazurite-gemstone.png",
+        levelOne: "/ascension/jewels/varunada-lazurite-sliver.png",
+        levelTwo: "/ascension/jewels/varunada-lazurite-fragment.png",
+        levelThree: "/ascension/jewels/varunada-lazurite-chunk.png",
+        levelFour: "/ascension/jewels/varunada-lazurite-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -701,26 +1135,54 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/cleansing-heart.png",
     },
     specialty: { name: "", image: "" },
-  },
-  Traveler: {
-    name: "Traveler",
-    rarity: 5,
-    element: { name: "Adaptive", image: "/elements/adaptive.png" },
-    gems: {
-      name: "Brilliant Diamond",
-      image: {
-        1: "/ascension/jewels/brilliant-diamond-sliver.png",
-        2: "/ascension/jewels/brilliant-diamond-fragment.png",
-        3: "/ascension/jewels/brilliant-diamond-chunk.png",
-        4: "/ascension/jewels/brilliant-diamond-gemstone.png",
+    books: {
+      levelOne: {
+        name: "Teachings of Freedom",
+        image: "/ascension/talents/teachings-of-freedom.png",
+      },
+      levelTwo: {
+        name: "Guide to Freedom",
+        image: "/ascension/talents/guide-to-freedom.png",
+      },
+      levelThree: {
+        name: "Philosophies of Freedom",
+        image: "/ascension/talents/philosophies-of-freedom.png",
       },
     },
-    weapon: { name: "Sword", image: "/weapons/sword.png" },
-    image: "/characters_full/traveler.png",
-    icon: "/characters_icon/traveler.png",
-    bossMat: { name: "", image: "" },
-    specialty: { name: "", image: "" },
   },
+  // Traveler: {
+  //   name: "Traveler",
+  //   rarity: 5,
+  //   element: { name: "Adaptive", image: "/elements/adaptive.png" },
+  //   gems: {
+  //     name: "Brilliant Diamond",
+  //     image: {
+  //       levelOne: "/ascension/jewels/brilliant-diamond-sliver.png",
+  //       levelTwo: "/ascension/jewels/brilliant-diamond-fragment.png",
+  //       levelThree: "/ascension/jewels/brilliant-diamond-chunk.png",
+  //       levelFour: "/ascension/jewels/brilliant-diamond-gemstone.png",
+  //     },
+  //   },
+  //   weapon: { name: "Sword", image: "/weapons/sword.png" },
+  //   image: "/characters_full/traveler.png",
+  //   icon: "/characters_icon/traveler.png",
+  //   bossMat: { name: "", image: "" },
+  //   specialty: { name: "", image: "" },
+  //   books: {
+  //     levelOne: {
+  //       name: "Teachings of ",
+  //       image: "/ascension/talents/teachings-of-.png",
+  //     },
+  //     levelTwo: {
+  //       name: "Guide to ",
+  //       image: "/ascension/talents/guide-to-.png",
+  //     },
+  //     levelThree: {
+  //       name: "Philosophies of",
+  //       image: "/ascension/talents/philosophies-of-.png",
+  //     },
+  //   },
+  // },
   Venti: {
     name: "Venti",
     rarity: 5,
@@ -728,10 +1190,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vayuda Turquoise",
       image: {
-        1: "/ascension/jewels/vayuda-turquoise-sliver.png",
-        2: "/ascension/jewels/vayuda-turquoise-fragment.png",
-        3: "/ascension/jewels/vayuda-turquoise-chunk.png",
-        4: "/ascension/jewels/vayuda-turquoise-gemstone.png",
+        levelOne: "/ascension/jewels/vayuda-turquoise-sliver.png",
+        levelTwo: "/ascension/jewels/vayuda-turquoise-fragment.png",
+        levelThree: "/ascension/jewels/vayuda-turquoise-chunk.png",
+        levelFour: "/ascension/jewels/vayuda-turquoise-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -742,6 +1204,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/hurricane-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Ballad",
+        image: "/ascension/talents/teachings-of-ballad.png",
+      },
+      levelTwo: {
+        name: "Guide to Ballad",
+        image: "/ascension/talents/guide-to-ballad.png",
+      },
+      levelThree: {
+        name: "Philosophies of Ballad",
+        image: "/ascension/talents/philosophies-of-ballad.png",
+      },
+    },
   },
   Xiangling: {
     name: "Xiangling",
@@ -750,10 +1226,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
@@ -764,6 +1240,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/everflame-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Diligence",
+        image: "/ascension/talents/teachings-of-diligence.png",
+      },
+      levelTwo: {
+        name: "Guide to Diligence",
+        image: "/ascension/talents/guide-to-diligence.png",
+      },
+      levelThree: {
+        name: "Philosophies of Diligence",
+        image: "/ascension/talents/philosophies-of-diligence.png",
+      },
+    },
   },
   Xiao: {
     name: "Xiao",
@@ -772,10 +1262,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Vayuda Turquoise",
       image: {
-        1: "/ascension/jewels/vayuda-turquoise-sliver.png",
-        2: "/ascension/jewels/vayuda-turquoise-fragment.png",
-        3: "/ascension/jewels/vayuda-turquoise-chunk.png",
-        4: "/ascension/jewels/vayuda-turquoise-gemstone.png",
+        levelOne: "/ascension/jewels/vayuda-turquoise-sliver.png",
+        levelTwo: "/ascension/jewels/vayuda-turquoise-fragment.png",
+        levelThree: "/ascension/jewels/vayuda-turquoise-chunk.png",
+        levelFour: "/ascension/jewels/vayuda-turquoise-gemstone.png",
       },
     },
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
@@ -786,6 +1276,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/juvenile-jade.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Prosperity",
+        image: "/ascension/talents/teachings-of-prosperity.png",
+      },
+      levelTwo: {
+        name: "Guide to Prosperity",
+        image: "/ascension/talents/guide-to-prosperity.png",
+      },
+      levelThree: {
+        name: "Philosophies of Prosperity",
+        image: "/ascension/talents/philosophies-of-prosperity.png",
+      },
+    },
   },
   Xingqiu: {
     name: "Xingqiu",
@@ -794,10 +1298,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Varunada Lazurite",
       image: {
-        1: "/ascension/jewels/varunada-lazurite-sliver.png",
-        2: "/ascension/jewels/varunada-lazurite-fragment.png",
-        3: "/ascension/jewels/varunada-lazurite-chunk.png",
-        4: "/ascension/jewels/varunada-lazurite-gemstone.png",
+        levelOne: "/ascension/jewels/varunada-lazurite-sliver.png",
+        levelTwo: "/ascension/jewels/varunada-lazurite-fragment.png",
+        levelThree: "/ascension/jewels/varunada-lazurite-chunk.png",
+        levelFour: "/ascension/jewels/varunada-lazurite-gemstone.png",
       },
     },
     weapon: { name: "Sword", image: "/weapons/sword.png" },
@@ -808,6 +1312,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/cleansing-heart.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Gold",
+        image: "/ascension/talents/teachings-of-gold.png",
+      },
+      levelTwo: {
+        name: "Guide to Gold",
+        image: "/ascension/talents/guide-to-gold.png",
+      },
+      levelThree: {
+        name: "Philosophies of Gold",
+        image: "/ascension/talents/philosophies-of-gold.png",
+      },
+    },
   },
   Xinyan: {
     name: "Xinyan",
@@ -816,10 +1334,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
@@ -830,6 +1348,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/everflame-seed.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Gold",
+        image: "/ascension/talents/teachings-of-gold.png",
+      },
+      levelTwo: {
+        name: "Guide to Gold",
+        image: "/ascension/talents/guide-to-gold.png",
+      },
+      levelThree: {
+        name: "Philosophies of Gold",
+        image: "/ascension/talents/philosophies-of-gold.png",
+      },
+    },
   },
   Yanfei: {
     name: "Yanfei",
@@ -838,10 +1370,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
@@ -852,6 +1384,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/juvenile-jade.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Gold",
+        image: "/ascension/talents/teachings-of-gold.png",
+      },
+      levelTwo: {
+        name: "Guide to Gold",
+        image: "/ascension/talents/guide-to-gold.png",
+      },
+      levelThree: {
+        name: "Philosophies of Gold",
+        image: "/ascension/talents/philosophies-of-gold.png",
+      },
+    },
   },
   Yoimiya: {
     name: "Yoimiya",
@@ -860,10 +1406,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Shivada Jade",
       image: {
-        1: "/ascension/jewels/agnidus-agate-sliver.png",
-        2: "/ascension/jewels/agnidus-agate-fragment.png",
-        3: "/ascension/jewels/agnidus-agate-chunk.png",
-        4: "/ascension/jewels/agnidus-agate-gemstone.png",
+        levelOne: "/ascension/jewels/agnidus-agate-sliver.png",
+        levelTwo: "/ascension/jewels/agnidus-agate-fragment.png",
+        levelThree: "/ascension/jewels/agnidus-agate-chunk.png",
+        levelFour: "/ascension/jewels/agnidus-agate-gemstone.png",
       },
     },
     weapon: { name: "Bow", image: "/weapons/bow.png" },
@@ -874,6 +1420,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/smoldering-pearl.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Transience",
+        image: "/ascension/talents/teachings-of-transience.png",
+      },
+      levelTwo: {
+        name: "Guide to Transience",
+        image: "/ascension/talents/guide-to-transience.png",
+      },
+      levelThree: {
+        name: "Philosophies of Transience",
+        image: "/ascension/talents/philosophies-of-transience.png",
+      },
+    },
   },
   Zhongli: {
     name: "Zhongli",
@@ -882,10 +1442,10 @@ const ALL_CHARACTERS = {
     gems: {
       name: "Prithiva Topaz",
       image: {
-        1: "/ascension/jewels/prithiva-topaz-sliver.png",
-        2: "/ascension/jewels/prithiva-topaz-fragment.png",
-        3: "/ascension/jewels/prithiva-topaz-chunk.png",
-        4: "/ascension/jewels/prithiva-topaz-gemstone.png",
+        levelOne: "/ascension/jewels/prithiva-topaz-sliver.png",
+        levelTwo: "/ascension/jewels/prithiva-topaz-fragment.png",
+        levelThree: "/ascension/jewels/prithiva-topaz-chunk.png",
+        levelFour: "/ascension/jewels/prithiva-topaz-gemstone.png",
       },
     },
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
@@ -896,6 +1456,20 @@ const ALL_CHARACTERS = {
       image: "/ascension/elemental/basalt-pillar.png",
     },
     specialty: { name: "", image: "" },
+    books: {
+      levelOne: {
+        name: "Teachings of Gold",
+        image: "/ascension/talents/teachings-of-gold.png",
+      },
+      levelTwo: {
+        name: "Guide to Gold",
+        image: "/ascension/talents/guide-to-gold.png",
+      },
+      levelThree: {
+        name: "Philosophies of Gold",
+        image: "/ascension/talents/philosophies-of-gold.png",
+      },
+    },
   },
 };
 

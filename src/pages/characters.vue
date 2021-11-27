@@ -54,8 +54,9 @@ const { ALL_CHARACTERS, localRare, localElement, localWeapon } = useLocal();
                 :src="x.element.image"
                 :title="x.element.name"
               />
-              <!-- x.image = ../assets/elements/hydro.png
-                    i set all objects to the same URL for testing -->
+              <!-- 
+                :src="x.element.image"
+                :title="x.element.name" -->
             </div>
             <div>
               <img
