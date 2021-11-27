@@ -19,7 +19,7 @@ const { isAuthenticated, user } = useAuth();
       ><span v-else>Traveler</span>!
     </h2>
     <div class="bg-gray-800 rounded-full p-10">
-      <img src="../../characters_full/Paimon.png" alt="Hello BG" />
+      <img src="/characters_full/Paimon.png" alt="Hello BG" />
     </div>
   </div>
 </template>
