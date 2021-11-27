@@ -78,7 +78,7 @@ const { ready, start } = useTimeout(4000, { controls: true }, false);
         rounded-lg
       "
     >
-      <img class="h-64" src="../../other/bg_login.png" alt="Login BG" />
+      <img class="h-64" src="/other/bg_login.png" alt="Login BG" />
       <form @submit.prevent="loginIn" class="flex flex-col space-y-4 p-4">
         <input
           name="username"
