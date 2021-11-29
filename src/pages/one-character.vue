@@ -5,21 +5,25 @@ import { useLocal } from "../composable/useLocal";
 
 const route = useRoute();
 const { name } = route.params;
+//console.log(name);
 
-console.log(name);
-
-const { ALL_CHARACTERS, getCharacter } = useLocal();
+const { getCharacter, getBooks, getJewels, getBoss, getSpecialty } = useLocal();
 
 const thisCharacter = getCharacter(name);
-console.log(thisCharacter.element.name);
+const thisBook = getBooks(name);
+const thisJewel = getJewels(name);
+const thisBoss = getBoss(name);
+const thisSpecialty = getSpecialty(name);
+//console.log(thisCharacter);
+// console.log(thisBook);
 
 //<h3>Hi {{characters.name}}</h3> THIS GOES IN THE TEMPLATE
 </script>
 
 <template>
-  <div class="bg-white rounded-md">
-    <div class="container flex mt-10">
-      <div class="rounded-l-lg w-1/3">
+  <div class="bg-white rounded-lg">
+    <div class="container flex mt-10 border-2 border-black rounded-lg">
+      <div class="w-1/3">
         <img
           :src="thisCharacter.image"
           class="bg-gray-800 rounded-tl-md text-xl w-full h-auto"
@@ -300,5 +304,113 @@ console.log(thisCharacter.element.name);
         </div>
       </div>
     </div>
+  </div>
+  <div class="bg-gray-800 p-4 rounded-t-lg mt-5 border-2 border-black">
+    <ul
+      class="
+        flex flex-wrap
+        content-around
+        text-center
+        justify-between
+        items-center
+      "
+    >
+      <div
+        class="
+          flex
+          bg-gray-700
+          rounded-full
+          text-white
+          p-5
+          m-3
+          border-2 border-black
+        "
+        v-for="b in thisBook"
+        :key="b"
+      >
+        <img class="h-20" :src="b.image" />
+        <p class="p-2 text-sm">
+          {{ b.name }}
+          <br />
+          <br />
+          <span
+            class="bg-white p-1 text-black rounded-full border-2 border-black"
+            >( x{{}} )
+          </span>
+        </p>
+      </div>
+
+      <div
+        class="
+          flex
+          bg-gray-700
+          rounded-full
+          text-white
+          p-5
+          flex-wrap
+          m-3
+          border-2 border-black
+        "
+        v-for="j in thisJewel"
+        :key="j"
+      >
+        <img class="h-20" :src="j.image" />
+        <p class="p-3 text-sm">
+          {{ j.name }}
+          <br />
+          <br />
+          <span
+            class="bg-white p-1 text-black rounded-full border-2 border-black"
+            >( x{{}} )
+          </span>
+        </p>
+      </div>
+      <div
+        class="
+          flex
+          bg-gray-700
+          rounded-full
+          text-white
+          p-5
+          flex-wrap
+          m-3
+          border-2 border-black
+        "
+      >
+        <img class="h-20" :src="thisBoss.image" />
+        <p class="p-3 text-sm">
+          {{ thisBoss.name }}
+          <br />
+          <br />
+          <span
+            class="bg-white p-1 text-black rounded-full border-2 border-black"
+            >( x{{}} )
+          </span>
+        </p>
+      </div>
+      <div
+        class="
+          flex
+          bg-gray-700
+          rounded-full
+          text-white
+          p-5
+          flex-wrap
+          m-3
+          border-2 border-black
+        "
+      >
+        <img class="h-20" :src="thisSpecialty.image" />
+        <p class="p-3 text-sm">
+          {{ thisSpecialty.name }}
+          <br />
+          <br />
+          <span
+            class="bg-white p-1 text-black rounded-full border-2 border-black"
+            >( x{{}} )
+          </span>
+        </p>
+      </div>
+    </ul>
   </div>
 </template>

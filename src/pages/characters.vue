@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 import { useLocal } from "../composable/useLocal";
 
-const { ALL_CHARACTERS, localRare, localElement, localWeapon } = useLocal();
+const { ALL_CHARACTERS } = useLocal();
 </script>
 
 <template>
