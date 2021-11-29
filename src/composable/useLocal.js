@@ -8,6 +8,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/albedo.png",
     icon: "/characters_icon/albedo.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Favonius Bladework - Weiss",
+        image: "/talents/albedo_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Abiogenesis: Solar Isotoma",
+        image: "/talents/albedo_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Rite of Progeniture: Tectonic Tide",
+        image: "/talents/albedo_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Aloy: {
     name: "Aloy",
@@ -16,6 +33,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/aloy.png",
     icon: "/characters_icon/aloy.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Rapid Fire",
+        image: "/talents/aloy_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Frozen Wilds",
+        image: "/talents/aloy_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Prophecies of Dawn",
+        image: "/talents/aloy_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Amber: {
     name: "Amber",
@@ -24,6 +58,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/amber.png",
     icon: "/characters_icon/amber.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Sharpshooter",
+        image: "/talents/amber_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Explosive Puppet",
+        image: "/talents/amber_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Fiery Rain",
+        image: "/talents/amber_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Ayaka: {
     name: "Ayaka",
@@ -32,6 +83,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/ayaka.png",
     icon: "/characters_icon/ayaka.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Kamisato Art - Kabuki",
+        image: "/talents/ayaka_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Kamisato Art: Hyouka",
+        image: "/talents/ayaka_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Kamisato Art: Soumetsu",
+        image: "/talents/ayaka_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Barbara: {
     name: "Barbara",
@@ -40,6 +108,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/barbara.png",
     icon: "/characters_icon/barbara.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Whisper of Water",
+        image: "/talents/barbara_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Let the Show Begin",
+        image: "/talents/barbara_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Shining Miracle",
+        image: "/talents/barbara_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Beidou: {
     name: "Beidou",
@@ -48,6 +133,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/beidou.png",
     icon: "/characters_icon/beidou.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Oceanborne",
+        image: "/talents/beidou_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Tidecaller",
+        image: "/talents/beidou_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Stormbreaker",
+        image: "/talents/beidou_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Bennett: {
     name: "Bennett",
@@ -56,6 +158,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/bennett.png",
     icon: "/characters_icon/bennett.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Strike of Fortune",
+        image: "/talents/bennett_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Passion Overload",
+        image: "/talents/bennett_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Fantastic Voyage",
+        image: "/talents/bennett_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Chongyun: {
     name: "Chongyun",
@@ -64,6 +183,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/chongyun.png",
     icon: "/characters_icon/chongyun.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Demonbane",
+        image: "/talents/chongyun_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Spirit Blade - Chonghua's Layered Frost",
+        image: "/talents/chongyun_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Spirit Blade - Cloud-parting Star",
+        image: "/talents/chongyun_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Diluc: {
     name: "Diluc",
@@ -72,6 +208,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/diluc.png",
     icon: "/characters_icon/diluc.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Tempered Sword",
+        image: "/talents/diluc_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Searing Onslaught",
+        image: "/talents/diluc_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Dawn",
+        image: "/talents/diluc_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Diona: {
     name: "Diona",
@@ -80,6 +233,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/diona.png",
     icon: "/characters_icon/diona.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Katzlein Style",
+        image: "/talents/diona_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Icy Paws",
+        image: "/talents/diona_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Signature Mix",
+        image: "/talents/diona_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Eula: {
     name: "Eula",
@@ -88,6 +258,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/eula.png",
     icon: "/characters_icon/eula.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Favonius Bladework - Edel",
+        image: "/talents/eula_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Icetide Vortex",
+        image: "/talents/eula_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Glacial Illumination",
+        image: "/talents/eula_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Fischl: {
     name: "Fischl",
@@ -96,6 +283,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/fischl.png",
     icon: "/characters_icon/fischl.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Bolts of Downfall",
+        image: "/talents/fischl_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Nightrider",
+        image: "/talents/fischl_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Midnight Phantasmagoria",
+        image: "/talents/fischl_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Ganyu: {
     name: "Ganyu",
@@ -104,6 +308,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/ganyu.png",
     icon: "/characters_icon/ganyu.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Liutian Archery",
+        image: "/talents/ganyu_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Trail of the Qilin",
+        image: "/talents/ganyu_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Celestial Shower",
+        image: "/talents/ganyu_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   "Hu Tao": {
     name: "Hu Tao",
@@ -112,6 +333,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
     image: "/characters/hu-tao.png",
     icon: "/characters_icon/hu-tao.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Secret Spear of Wangsheng",
+        image: "/talents/hu-tao_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Guide to Afterlife",
+        image: "/talents/hu-tao_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Spirit Soother",
+        image: "/talents/hu-tao_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Jean: {
     name: "Jean",
@@ -120,6 +358,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/jean.png",
     icon: "/characters_icon/jean.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Favonius Bladework",
+        image: "/talents/jean_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Gale Blade",
+        image: "/talents/jean_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Dandelion Breeze",
+        image: "/talents/jean_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Kaeya: {
     name: "Kaeya",
@@ -128,6 +383,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/kaeya.png",
     icon: "/characters_icon/kaeya.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Ceremonial Bladework",
+        image: "/talents/kaeya_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Frostgnaw",
+        image: "/talents/kaeya_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Glacial Waltz",
+        image: "/talents/kaeya_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Kazuha: {
     name: "Kazuha",
@@ -136,6 +408,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/kazuha.png",
     icon: "/characters_icon/kazuha.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Garyuu Bladework",
+        image: "/talents/kazuha_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Chihayaburu",
+        image: "/talents/kazuha_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Kazuha Slash",
+        image: "/talents/kazuha_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Keqing: {
     name: "Keqing",
@@ -144,6 +433,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/keqing.png",
     icon: "/characters_icon/keqing.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Yunlai Swordsmanship",
+        image: "/talents/keqing_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Stellar Restoration",
+        image: "/talents/keqing_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Starward Sword",
+        image: "/talents/keqing_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Klee: {
     name: "Klee",
@@ -152,6 +458,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/klee.png",
     icon: "/characters_icon/klee.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Kaboom!",
+        image: "/talents/klee_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Jumpy Dumpty",
+        image: "/talents/klee_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Sparks 'n' Splash",
+        image: "/talents/klee_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Kokomi: {
     name: "Kokomi",
@@ -160,6 +483,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/kokomi.png",
     icon: "/characters_icon/kokomi.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "The Shape of Water",
+        image: "/talents/kokomi_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Kurage's Oath",
+        image: "/talents/kokomi_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Nereid's Ascension",
+        image: "/talents/kokomi_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Lisa: {
     name: "Lisa",
@@ -168,6 +508,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/lisa.png",
     icon: "/characters_icon/lisa.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Lightning Touch",
+        image: "/talents/lisa_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Violet Arc",
+        image: "/talents/lisa_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Lightning Rose",
+        image: "/talents/lisa_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Mona: {
     name: "Mona",
@@ -176,6 +533,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/mona.png",
     icon: "/characters_icon/mona.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Ripple of Fate",
+        image: "/talents/mona_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Reflection of Doom",
+        image: "/talents/mona_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Stellaris Phantasm",
+        image: "/talents/mona_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Ningguang: {
     name: "Ningguang",
@@ -184,6 +558,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/ningguang.png",
     icon: "/characters_icon/ningguang.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Sparkling Scatter",
+        image: "/talents/ningguang_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Jade Screen",
+        image: "/talents/ningguang_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Starshatter",
+        image: "/talents/ningguang_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Noelle: {
     name: "Noelle",
@@ -192,6 +583,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/noelle.png",
     icon: "/characters_icon/noelle.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Favonius Bladework - Maid",
+        image: "/talents/noelle_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Breastplate",
+        image: "/talents/noelle_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Sweeping Time",
+        image: "/talents/noelle_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Qiqi: {
     name: "Qiqi",
@@ -200,6 +608,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/qiqi.png",
     icon: "/characters_icon/qiqi.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Ancient Sword Art",
+        image: "/talents/qiqi_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Adeptus Art: Herald of Frost",
+        image: "/talents/qiqi_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Adeptus Art: Preserver of Fortune",
+        image: "/talents/qiqi_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Raiden: {
     name: "Raiden",
@@ -208,6 +633,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
     image: "/characters/raiden.png",
     icon: "/characters_icon/raiden.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Origin",
+        image: "/talents/raiden_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Transcendence: Baleful Omen",
+        image: "/talents/raiden_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Secret Art: Musou Shinsetsu",
+        image: "/talents/raiden_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Razor: {
     name: "Razor",
@@ -216,6 +658,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/razor.png",
     icon: "/characters_icon/razor.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Steel Fang",
+        image: "/talents/razor_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Claw and Thunder",
+        image: "/talents/razor_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Lightning Fang",
+        image: "/talents/razor_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Rosaria: {
     name: "Rosaria",
@@ -224,6 +683,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
     image: "/characters/rosaria.png",
     icon: "/characters_icon/rosaria.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Spear of the Church",
+        image: "/talents/rosaria_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Ravaging Confession",
+        image: "/talents/rosaria_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Rites of Termination",
+        image: "/talents/rosaria_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Sara: {
     name: "Sara",
@@ -232,6 +708,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/sara.png",
     icon: "/characters_icon/sara.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Tengu Bowmanship",
+        image: "/talents/sara_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Tengu Stormcall",
+        image: "/talents/sara_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Subjugation: Koukou Sendou",
+        image: "/talents/sara_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Sayu: {
     name: "Sayu",
@@ -240,6 +733,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/sayu.png",
     icon: "/characters_icon/sayu.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Shuumatsuban Ninja Blade",
+        image: "/talents/sayu_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Yoohoo Art: Fuuin Dash",
+        image: "/talents/sayu_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Yoohoo Art: Mujina Flurry",
+        image: "/talents/sayu_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Sucrose: {
     name: "Sucrose",
@@ -248,6 +758,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/sucrose.png",
     icon: "/characters_icon/sucrose.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Wind Spirit Creation",
+        image: "/talents/sucrose_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Astable Anemohypostasis Creation - 6308",
+        image: "/talents/sucrose_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Forbidden Creation - Isomer 75 / Type II",
+        image: "/talents/sucrose_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Tartaglia: {
     name: "Tartaglia",
@@ -256,6 +783,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/tartaglia.png",
     icon: "/characters_icon/tartaglia.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Cutting Torrent",
+        image: "/talents/tartaglia_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Foul Legacy: Raging Tide",
+        image: "/talents/tartaglia_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Havor: Obliteration",
+        image: "/talents/tartaglia_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   // Traveler: {
   //   name: "Traveler",
@@ -297,6 +841,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/venti.png",
     icon: "/characters_icon/venti.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Divine Marksmanship",
+        image: "/talents/venti_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Skyward Sonnet",
+        image: "/talents/venti_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Wind's Grand Ode",
+        image: "/talents/venti_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Xiangling: {
     name: "Xiangling",
@@ -305,6 +866,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
     image: "/characters/xiangling.png",
     icon: "/characters_icon/xiangling.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Dough-Fu",
+        image: "/talents/xiangling_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Guoba Attack",
+        image: "/talents/xiangling_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Pyronado",
+        image: "/talents/xiangling_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Xiao: {
     name: "Xiao",
@@ -313,6 +891,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
     image: "/characters/xiao.png",
     icon: "/characters_icon/xiao.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Whirlwind Thrust",
+        image: "/talents/xiao_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Lemniscatic Wind Cycling",
+        image: "/talents/xiao_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Bane of All Evil",
+        image: "/talents/xiao_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Xingqiu: {
     name: "Xingqiu",
@@ -321,6 +916,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Sword", image: "/weapons/sword.png" },
     image: "/characters/xingqiu.png",
     icon: "/characters_icon/xingqiu.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Guhua Style",
+        image: "/talents/xingqiu_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Guhua Sword - Fatal Rainscreen",
+        image: "/talents/xingqiu_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Guhua Sword - Raincutter",
+        image: "/talents/xingqiu_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Xinyan: {
     name: "Xinyan",
@@ -329,6 +941,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Claymore", image: "/weapons/claymore.png" },
     image: "/characters/xinyan.png",
     icon: "/characters_icon/xinyan.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Dance on Fire",
+        image: "/talents/xinyan_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Sweeping Fervor",
+        image: "/talents/xinyan_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Riff Revolution",
+        image: "/talents/xinyan_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Yanfei: {
     name: "Yanfei",
@@ -337,6 +966,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Catalyst", image: "/weapons/catalyst.png" },
     image: "/characters/yanfei.png",
     icon: "/characters_icon/yanfei.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Seal of Approval",
+        image: "/talents/yanfei_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Jade Screen",
+        image: "/talents/yanfei_s2.png",
+        unlock: "Signed Edict",
+      },
+      "Elemental Burst": {
+        name: "Done Deal",
+        image: "/talents/yanfei_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Yoimiya: {
     name: "Yoimiya",
@@ -345,6 +991,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Bow", image: "/weapons/bow.png" },
     image: "/characters/yoimiya.png",
     icon: "/characters_icon/yoimiya.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Firework Flare-Up",
+        image: "/talents/yoimiya_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Niwabi Fire-Dance",
+        image: "/talents/yoimiya_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Ryuukin Saxifrage",
+        image: "/talents/yoimiya_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
   Zhongli: {
     name: "Zhongli",
@@ -353,6 +1016,23 @@ const ALL_CHARACTERS = {
     weapon: { name: "Polearm", image: "/weapons/polearm.png" },
     image: "/characters/zhongli.png",
     icon: "/characters_icon/zhongli.png",
+    skillTalents: {
+      "Normal Attack": {
+        name: "Rain of Stone",
+        image: "/talents/zhongli_s1.png",
+        unlock: "Normal Attack",
+      },
+      "Elemental Skill": {
+        name: "Dominus Lapidis",
+        image: "/talents/zhongli_s2.png",
+        unlock: "Elemental Skill",
+      },
+      "Elemental Burst": {
+        name: "Planet Befall",
+        image: "/talents/zhongli_s3.png",
+        unlock: "Elemental Burst",
+      },
+    },
   },
 };
 

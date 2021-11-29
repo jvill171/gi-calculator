@@ -14,6 +14,8 @@ const thisBook = getBooks(name);
 const thisJewel = getJewels(name);
 const thisBoss = getBoss(name);
 const thisSpecialty = getSpecialty(name);
+console.log("b");
+console.log(thisCharacter.skillTalents);
 //console.log(thisCharacter);
 // console.log(thisBook);
 
@@ -21,7 +23,7 @@ const thisSpecialty = getSpecialty(name);
 </script>
 
 <template>
-  <div class="bg-white rounded-lg">
+  <div class="bg-black rounded-lg">
     <div class="container flex mt-10 border-2 border-black rounded-lg">
       <div class="w-1/3">
         <img
@@ -39,22 +41,40 @@ const thisSpecialty = getSpecialty(name);
       </div>
 
       <div class="rounded-r-lg grid grid-rows-3 w-2/3">
-        <div class="bg-gray-300 text-center rounded-tr-md">
-          <p class="underline">Talents (Current)</p>
+        <div class="bg-gray-700 text-center text-white rounded-tr-md">
+          <p class="underline pt-3">Talents (Current)</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
+              v-for="cTalents in thisCharacter.skillTalents"
+              :key="cTalents"
               class="
                 self-end
-                bg-gray-400
                 rounded-md
                 text-center
                 w-1/3
                 h-3/4
-                border-gray-700
+                border-2 border-black
+                text-white
               "
             >
               <div class="p-2 break-words text-sm">
-                Talent_1_NAME <br />(Normal Attack)
+                {{ cTalents.name }} <br /><span
+                  class="bg-black text-white px-1 py-0.5 rounded-full text-xs"
+                  >{{ cTalents.unlock }}</span
+                >
+                <br />
+                <img
+                  class="
+                    bg-blue-500
+                    rounded-2xl
+                    w-20
+                    h-20
+                    my-1
+                    inline-block
+                    text-center
+                  "
+                  :src="cTalents.image"
+                />
               </div>
               <div
                 class="
@@ -68,92 +88,73 @@ const thisSpecialty = getSpecialty(name);
                   justify-evenly
                 "
               >
-                <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
-                <p class="w-1/3 bg-white">10</p>
-                <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
-              </div>
-            </div>
-            <div
-              class="
-                self-end
-                bg-gray-400
-                rounded-md
-                text-center
-                w-1/3
-                h-3/4
-                border-gray-700
-              "
-            >
-              <div class="p-2 break-words text-sm">
-                Talent_2_NAME big name <br />(Elemental Skill)
-              </div>
-              <div
-                class="
-                  text-center
-                  bg-white
-                  h-1/4
-                  rounded-b-md
-                  container
-                  mx-auto
-                  flex
-                  justify-evenly
-                "
-              >
-                <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
-                <p class="w-1/3 bg-white">10</p>
-                <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
-              </div>
-            </div>
-            <div
-              class="
-                self-end
-                bg-gray-400
-                rounded-md
-                text-center
-                w-1/3
-                h-3/4
-                border-gray-700
-              "
-            >
-              <div class="p-2 break-words text-sm">
-                Talent_3_NAME <br />(Elemental Burst)
-              </div>
-              <div
-                class="
-                  text-center
-                  bg-white
-                  h-1/4
-                  rounded-b-md
-                  container
-                  mx-auto
-                  flex
-                  justify-evenly
-                "
-              >
-                <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
-                <p class="w-1/3 bg-white">10</p>
-                <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
+                <button
+                  class="
+                    w-1/3
+                    transition
+                    duration-500
+                    ease-in-out
+                    bg-red-500
+                    hover:bg-red-600 hover:text-white
+                    rounded-bl-md
+                  "
+                >
+                  -
+                </button>
+                <p class="w-1/3 bg-gray-900 text">10</p>
+                <button
+                  class="
+                    w-1/3
+                    rounded-br-md
+                    transition
+                    duration-500
+                    ease-in-out
+                    bg-green-500
+                    hover:bg-green-600 hover:text-white
+                  "
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-red-300 text-center">
-          <p class="underline">Talents (Target)</p>
+        <div class="bg-gray-800 text-center text-white rounded-tr-md">
+          <p class="underline pt-3">Talents (Desired)</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
+              v-for="cTalents in thisCharacter.skillTalents"
+              :key="cTalents"
               class="
                 self-end
-                bg-gray-400
+                bg-green-500
                 rounded-md
                 text-center
                 w-1/3
                 h-3/4
-                border-gray-700
+                border-2 border-black
+                text-white
               "
             >
               <div class="p-2 break-words text-sm">
-                Talent_1_NAME <br />(Normal Attack)
+                {{ cTalents.name }} <br /><span
+                  class="bg-black text-white px-1 py-0.5 rounded-full text-xs"
+                  >{{ cTalents.unlock }}</span
+                >
+                <br />
+                <img
+                  class="
+                    bg-blue-500
+                    rounded-2xl
+                    w-20
+                    h-20
+                    my-1
+                    inline-block
+                    text-center
+                  "
+                  :src="cTalents.image"
+                />
               </div>
               <div
                 class="
@@ -167,77 +168,41 @@ const thisSpecialty = getSpecialty(name);
                   justify-evenly
                 "
               >
-                <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
-                <p class="w-1/3 bg-white">10</p>
-                <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
-              </div>
-            </div>
-            <div
-              class="
-                self-end
-                bg-gray-400
-                rounded-md
-                text-center
-                w-1/3
-                h-3/4
-                border-gray-700
-              "
-            >
-              <div class="p-2 break-words text-sm">
-                Talent_2_NAME big name <br />(Elemental Skill)
-              </div>
-              <div
-                class="
-                  text-center
-                  bg-white
-                  h-1/4
-                  rounded-b-md
-                  container
-                  mx-auto
-                  flex
-                  justify-evenly
-                "
-              >
-                <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
-                <p class="w-1/3 bg-white">10</p>
-                <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
-              </div>
-            </div>
-            <div
-              class="
-                self-end
-                bg-gray-400
-                rounded-md
-                text-center
-                w-1/3
-                h-3/4
-                border-gray-700
-              "
-            >
-              <div class="p-2 break-words text-sm">
-                Talent_3_NAME <br />(Elemental Burst)
-              </div>
-              <div
-                class="
-                  text-center
-                  bg-white
-                  h-1/4
-                  rounded-b-md
-                  container
-                  mx-auto
-                  flex
-                  justify-evenly
-                "
-              >
-                <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
-                <p class="w-1/3 bg-white">10</p>
-                <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
+                <button
+                  class="
+                    w-1/3
+                    transition
+                    duration-500
+                    ease-in-out
+                    bg-red-500
+                    hover:bg-red-600 hover:text-white
+                    rounded-bl-md
+                  "
+                >
+                  -
+                </button>
+                <p class="w-1/3 bg-gray-900 text">10</p>
+                <button
+                  class="
+                    w-1/3
+                    rounded-br-md
+                    transition
+                    duration-500
+                    ease-in-out
+                    bg-green-500
+                    hover:bg-green-600 hover:text-white
+                  "
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-blue-300 px-5 container justify-evenly flex">
+        <div
+          class="bg-blue-300 px-5 container justify-evenly flex rounded-br-md"
+        >
           <div class="self-center">
             <div class="container flex space-x-3 px-3 py-2">
               <div
@@ -256,9 +221,33 @@ const thisSpecialty = getSpecialty(name);
                     justify-evenly
                   "
                 >
-                  <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
+                  <button
+                    class="
+                      w-1/3
+                      transition
+                      duration-500
+                      ease-in-out
+                      bg-red-500
+                      hover:bg-red-600 hover:text-white
+                      rounded-bl-md
+                    "
+                  >
+                    -
+                  </button>
                   <p class="w-1/3 bg-white">10</p>
-                  <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
+                  <button
+                    class="
+                      w-1/3
+                      rounded-br-md
+                      transition
+                      duration-500
+                      ease-in-out
+                      bg-green-500
+                      hover:bg-green-600 hover:text-white
+                    "
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             </div>
@@ -284,22 +273,36 @@ const thisSpecialty = getSpecialty(name);
                     justify-evenly
                   "
                 >
-                  <button class="w-1/3 bg-red-500 rounded-bl-md">-</button>
+                  <button
+                    class="
+                      w-1/3
+                      transition
+                      duration-500
+                      ease-in-out
+                      bg-red-500
+                      hover:bg-red-600 hover:text-white
+                      rounded-bl-md
+                    "
+                  >
+                    -
+                  </button>
                   <p class="w-1/3 bg-white">10</p>
-                  <button class="w-1/3 bg-green-500 rounded-br-md">+</button>
+                  <button
+                    class="
+                      w-1/3
+                      rounded-br-md
+                      transition
+                      duration-500
+                      ease-in-out
+                      bg-green-500
+                      hover:bg-green-600 hover:text-white
+                    "
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="bg-purple-300 w-full p-5 rounded-br-md text-center">
-          <div>Materials</div>
-          <div class="container flex justify-evenly">
-            <p>Specialty</p>
-            <p>Specialty</p>
-            <p>Specialty</p>
-            <p>Specialty</p>
           </div>
         </div>
       </div>
