@@ -14,12 +14,6 @@ const thisBook = getBooks(name);
 const thisJewel = getJewels(name);
 const thisBoss = getBoss(name);
 const thisSpecialty = getSpecialty(name);
-console.log("b");
-console.log(thisCharacter.skillTalents);
-//console.log(thisCharacter);
-// console.log(thisBook);
-
-//<h3>Hi {{characters.name}}</h3> THIS GOES IN THE TEMPLATE
 </script>
 
 <template>
@@ -45,10 +39,11 @@ console.log(thisCharacter.skillTalents);
           <p class="underline pt-3">Talents (Current)</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
-              v-for="cTalents in thisCharacter.skillTalents"
+              v-for="(cTalents, name, index) in thisCharacter.skillTalents"
               :key="cTalents"
               class="
                 self-end
+                bg-gray-600
                 rounded-md
                 text-center
                 w-1/3
@@ -58,20 +53,39 @@ console.log(thisCharacter.skillTalents);
               "
             >
               <div class="p-2 break-words text-sm">
-                {{ cTalents.name }} <br /><span
-                  class="bg-black text-white px-1 py-0.5 rounded-full text-xs"
+                {{ cTalents.name }}<br /><span
+                  class="bg-black text-white px-1 py-0.5 rounded-full"
                   >{{ cTalents.unlock }}</span
                 >
                 <br />
                 <img
                   class="
-                    bg-blue-500
                     rounded-2xl
                     w-20
                     h-20
                     my-1
                     inline-block
                     text-center
+                    border-2 border-black
+                    bg-opacity-80
+                    p-1
+                  "
+                  :class="
+                    thisCharacter.element.name == 'Anemo'
+                      ? 'bg-green-400'
+                      : thisCharacter.element.name === 'Pyro'
+                      ? 'bg-red-600  bg-opacity-100'
+                      : thisCharacter.element.name === 'Hydro'
+                      ? 'bg-blue-500'
+                      : thisCharacter.element.name === 'Cryo'
+                      ? 'bg-blue-300'
+                      : thisCharacter.element.name === 'Dendro'
+                      ? 'bg-green-700'
+                      : thisCharacter.element.name === 'Geo'
+                      ? 'bg-yellow-400'
+                      : thisCharacter.element.name === 'Electro'
+                      ? 'bg-purple-500'
+                      : 'bg-black'
                   "
                   :src="cTalents.image"
                 />
@@ -89,19 +103,20 @@ console.log(thisCharacter.skillTalents);
                 "
               >
                 <button
+                  @click="pressed()"
                   class="
                     w-1/3
                     transition
                     duration-500
                     ease-in-out
                     bg-red-500
-                    hover:bg-red-600 hover:text-white
+                    hover:bg-red-600 hover:text-black hover:scale-105
                     rounded-bl-md
                   "
                 >
                   -
                 </button>
-                <p class="w-1/3 bg-gray-900 text">10</p>
+                <p class="w-1/3 bg-gray-900 text">index: {{ index }}</p>
                 <button
                   class="
                     w-1/3
@@ -110,7 +125,7 @@ console.log(thisCharacter.skillTalents);
                     duration-500
                     ease-in-out
                     bg-green-500
-                    hover:bg-green-600 hover:text-white
+                    hover:bg-green-600 hover:text-black hover:scale-105
                   "
                 >
                   +
@@ -124,34 +139,52 @@ console.log(thisCharacter.skillTalents);
           <p class="underline pt-3">Talents (Desired)</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
-              v-for="cTalents in thisCharacter.skillTalents"
+              v-for="(cTalents, name, index) in thisCharacter.skillTalents"
               :key="cTalents"
               class="
                 self-end
-                bg-green-500
+                bg-gray-600
                 rounded-md
                 text-center
                 w-1/3
-                h-3/4
                 border-2 border-black
                 text-white
               "
             >
               <div class="p-2 break-words text-sm">
                 {{ cTalents.name }} <br /><span
-                  class="bg-black text-white px-1 py-0.5 rounded-full text-xs"
+                  class="bg-black px-1 py-0.5 rounded-full"
                   >{{ cTalents.unlock }}</span
                 >
                 <br />
                 <img
                   class="
-                    bg-blue-500
                     rounded-2xl
                     w-20
                     h-20
                     my-1
                     inline-block
                     text-center
+                    border-2 border-black
+                    bg-opacity-80
+                    p-1
+                  "
+                  :class="
+                    thisCharacter.element.name == 'Anemo'
+                      ? 'bg-green-400'
+                      : thisCharacter.element.name === 'Pyro'
+                      ? 'bg-red-600 bg-opacity-100'
+                      : thisCharacter.element.name === 'Hydro'
+                      ? 'bg-blue-500'
+                      : thisCharacter.element.name === 'Cryo'
+                      ? 'bg-blue-300'
+                      : thisCharacter.element.name === 'Dendro'
+                      ? 'bg-green-700'
+                      : thisCharacter.element.name === 'Geo'
+                      ? 'bg-yellow-400'
+                      : thisCharacter.element.name === 'Electro'
+                      ? 'bg-purple-500'
+                      : 'bg-black'
                   "
                   :src="cTalents.image"
                 />
@@ -175,13 +208,13 @@ console.log(thisCharacter.skillTalents);
                     duration-500
                     ease-in-out
                     bg-red-500
-                    hover:bg-red-600 hover:text-white
+                    hover:bg-red-600 hover:text-black hover:scale-105
                     rounded-bl-md
                   "
                 >
                   -
                 </button>
-                <p class="w-1/3 bg-gray-900 text">10</p>
+                <p class="w-1/3 bg-gray-900 text">Index: {{ index }}</p>
                 <button
                   class="
                     w-1/3
@@ -190,7 +223,7 @@ console.log(thisCharacter.skillTalents);
                     duration-500
                     ease-in-out
                     bg-green-500
-                    hover:bg-green-600 hover:text-white
+                    hover:bg-green-600 hover:text-black hover:scale-105
                   "
                 >
                   +
