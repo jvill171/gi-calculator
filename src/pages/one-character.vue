@@ -13,7 +13,7 @@ const thisCharacter = getCharacter(name);
 const thisBook = getBooks(name);
 const thisJewel = getJewels(name);
 const thisBoss = getBoss(name);
-const thisSpecialty = getSpecialty(name);
+  const thisSpecialty = getSpecialty(name);
 </script>
 
 <template>
