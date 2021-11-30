@@ -1590,9 +1590,6 @@ export const useLocal = () => {
         return true;
       }
     });
-    console.log("a");
-    console.log(TALENT_BOOKS[keys[i]].books);
-    console.log("a");
 
     return TALENT_BOOKS[keys[i]].books;
   };
@@ -1636,7 +1633,6 @@ export const useLocal = () => {
         return true;
       }
     });
-    console.log(SPECIALTY_ITEMS[keys[i]]);
     return SPECIALTY_ITEMS[keys[i]];
   };
 
