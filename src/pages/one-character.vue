@@ -30,7 +30,8 @@ const XPCounter = [
 
 const cTal = ref([1, 1, 1]);
 const dTal = ref([1, 1, 1]);
-const maxTalent = ref(0);
+const cMaxTal = ref(1);
+const dMaxTal = ref(1);
 
 const level = ref([1, 1]);
 const bCount = ref([0, 0, 0]);
@@ -38,16 +39,13 @@ const jCount = ref([0, 0, 0, 0]);
 const bmCount = ref(0);
 const sCount = ref(0);
 const mora = ref(0);
+const ascLevel = ref([0, 0]);
 
 //non-dynamic variables
-let ascensionLevel = 6;
-let totalXP = 0;
-
 const calcXP = () => {
-  let min = 1;
   let max = 90;
   totalXP = 0;
-  for (; min < max; min++) {
+  for (let min = 1; min < max; min++) {
     totalXP += XPCounter[min];
   }
   console.log(totalXP);
@@ -56,20 +54,80 @@ const calcXP = () => {
 };
 
 //Relies on non-dynamic variables, fix this
-const getMaxTalent = () => {
+const getMaxTalent = (ascensionLevel) => {
   let myTalent = 1;
-  if (ascensionLevel >= 2) myTalent++;
-
-  for (let counter = 2; counter < ascensionLevel; counter++) myTalent += 2;
-
-  console.log(myTalent);
+  if (ascensionLevel >= 2) {
+    myTalent++;
+  }
+  for (let counter = 2; counter < ascensionLevel; counter++) {
+    myTalent += 2;
+  }
   return myTalent;
+};
+
+const getAscension = (oldLevel, newLevel) => {
+  //Lvl Decreased
+  if (oldLevel - newLevel > 0) {
+    if (newLevel < 20) {
+      return 0;
+    } else if (newLevel < 40) {
+      return 1;
+    } else if (newLevel < 50) {
+      return 2;
+    } else if (newLevel < 60) {
+      return 3;
+    } else if (newLevel < 70) {
+      return 4;
+    } else if (newLevel < 80) {
+      return 5;
+    } else {
+      return 6;
+    }
+  }
+  //Lvl Increased
+  else {
+    if (newLevel > 80) {
+      return 6;
+    } else if (newLevel > 70) {
+      return 5;
+    } else if (newLevel > 60) {
+      return 4;
+    } else if (newLevel > 50) {
+      return 3;
+    } else if (newLevel > 40) {
+      return 2;
+    } else if (newLevel > 20) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+};
+
+const setNewLevel = (asc, cLevel) => {
+  console.log(asc);
+  console.log(cLevel);
+  if ((asc == 6 && cLevel < 80) || (asc == 5 && cLevel > 80)) {
+    return 80;
+  } else if ((asc == 5 && cLevel < 70) || (asc == 4 && cLevel > 70)) {
+    return 70;
+  } else if ((asc == 4 && cLevel < 60) || (asc == 3 && cLevel > 60)) {
+    return 60;
+  } else if ((asc == 3 && cLevel < 50) || (asc == 2 && cLevel > 50)) {
+    return 50;
+  } else if ((asc == 2 && cLevel < 40) || (asc == 1 && cLevel > 40)) {
+    return 40;
+  } else if ((asc == 1 && cLevel < 20) || (asc == 0 && cLevel > 20)) {
+    return 20;
+  } else {
+    return cLevel;
+  }
 };
 </script>
 
 <template>
   <!-- Top Area -->
-  <div @click="ascensionCount = getMaxTalent()" class="bg-black rounded-lg">
+  <div class="bg-black rounded-lg">
     <div class="container flex mt-10 border-2 border-black rounded-lg">
       <!-- Character Portrait -->
       <div class="w-1/3 border-black border-r-2">
@@ -171,7 +229,9 @@ const getMaxTalent = () => {
                 <p class="w-1/3 bg-gray-900 text">{{ cTal[index] }}</p>
                 <button
                   @click="
-                    cTal[index] >= dTal[index]
+                    cTal[index] + 1 > cMaxTal
+                      ? (cTal = cTal)
+                      : cTal[index] >= dTal[index]
                       ? (cTal[index]++, dTal[index]++)
                       : cTal[index]++
                   "
@@ -279,7 +339,7 @@ const getMaxTalent = () => {
                 </button>
                 <p class="w-1/3 bg-gray-900 text">{{ dTal[index] }}</p>
                 <button
-                  @click="dTal[index]++"
+                  @click="dTal[index] + 1 > dMaxTal ? '' : dTal[index]++"
                   class="
                     w-1/3
                     rounded-br-md
@@ -306,20 +366,54 @@ const getMaxTalent = () => {
           >
             <p class="text-center pb-5 underline">Character Level</p>
             <div
-              class="
-                bg-gray-600
-                rounded-md
-                text-center
-                h-3/4
-                border-2 border-black
-              "
+              class="rounded-md text-center h-3/4 border-2 border-black w-full"
             >
-              <p
-                class="py-1 border-black border-b-2"
-                :class="level[0] == 50 ? 'hidden' : ''"
-              >
-                Current Level
-              </p>
+              <p class="py-1 border-black border-b-2">Current Level</p>
+              <span class="text-lg" v-for="(num, name, index) in 6" :key="num">
+                <button
+                  @click="
+                    (ascLevel[0] = num),
+                      (level[0] = setNewLevel(ascLevel[0], level[0])),
+                      level[0] > level[1] || ascLevel[0] > ascLevel[1]
+                        ? ((level[1] = level[0]),
+                          (ascLevel[1] = ascLevel[0]),
+                          (cMaxTal = getMaxTalent(ascLevel[0])),
+                          (dMaxTal = cMaxTal))
+                        : (cMaxTal = getMaxTalent(ascLevel[0])),
+                      dTal[0] > dMaxTal ? (dTal[0] = dMaxTal) : '',
+                      cTal[0] > dTal[0] ? (cTal[0] = dTal[0]) : '',
+                      dTal[1] > dMaxTal ? (dTal[1] = dMaxTal) : '',
+                      cTal[1] > dTal[1] ? (cTal[1] = dTal[1]) : '',
+                      dTal[2] > dMaxTal ? (dTal[2] = dMaxTal) : '',
+                      cTal[2] > dTal[2] ? (cTal[2] = dTal[2]) : ''
+                  "
+                  class="
+                    px-1
+                    mx-px
+                    rounded-full
+                    text-black
+                    font-bold
+                    bg-blue-100 bg-opacity-20
+                  "
+                  v-if="num > ascLevel[0]"
+                >
+                  ✧
+                </button>
+                <button
+                  @click="
+                    ascLevel[0] == num ? ascLevel[0]-- : (ascLevel[0] = num),
+                      (level[0] = setNewLevel(ascLevel[0], level[0])),
+                      (cMaxTal = getMaxTalent(ascLevel[0])),
+                      cTal[0] > cMaxTal ? (cTal[0] = cMaxTal) : '',
+                      cTal[1] > cMaxTal ? (cTal[1] = cMaxTal) : '',
+                      cTal[2] > cMaxTal ? (cTal[2] = cMaxTal) : ''
+                  "
+                  class="px-1 mx-px rounded-full bg-blue-100 bg-opacity-20"
+                  v-else
+                >
+                  ✦
+                </button>
+              </span>
               <div
                 class="
                   text-center
@@ -333,7 +427,13 @@ const getMaxTalent = () => {
               >
                 <button
                   @click="
-                    level[0] <= 10 ? (level[0] = 1) : (level[0] = level[0] - 10)
+                    (ascLevel[0] = getAscension(level[0], level[0] - 10)),
+                      level[0],
+                      level[0] <= 10 ? (level[0] = 1) : (level[0] -= 10),
+                      (cMaxTal = getMaxTalent(ascLevel[0])),
+                      cTal[0] > cMaxTal ? (cTal[0] = cMaxTal) : '',
+                      cTal[1] > cMaxTal ? (cTal[1] = cMaxTal) : '',
+                      cTal[2] > cMaxTal ? (cTal[2] = cMaxTal) : ''
                   "
                   class="
                     w-1/3
@@ -349,7 +449,14 @@ const getMaxTalent = () => {
                   -10
                 </button>
                 <button
-                  @click="level[0] <= 1 ? (level[0] = 1) : level[0]--"
+                  @click="
+                    (ascLevel[0] = getAscension(level[0], level[0] - 1)),
+                      level[0] <= 1 ? (level[0] = 1) : level[0]--,
+                      (cMaxTal = getMaxTalent(ascLevel[0])),
+                      cTal[0] > cMaxTal ? (cTal[0] = cMaxTal) : '',
+                      cTal[1] > cMaxTal ? (cTal[1] = cMaxTal) : '',
+                      cTal[2] > cMaxTal ? (cTal[2] = cMaxTal) : ''
+                  "
                   class="
                     w-1/3
                     transition
@@ -364,11 +471,17 @@ const getMaxTalent = () => {
                 <p class="w-1/3 bg-gray-900">{{ level[0] }}</p>
                 <button
                   @click="
-                    level[0] >= 90
-                      ? (level[0] = 90)
-                      : level[0] + 1 >= level[1]
-                      ? (level[0]++, (level[1] = level[0]))
-                      : level[0]++
+                    (ascLevel[0] = getAscension(level[0], level[0] + 1)),
+                      level[0] >= 90
+                        ? (level[0] = 90)
+                        : level[0] + 1 >= level[1]
+                        ? (level[0]++,
+                          (level[1] = level[0]),
+                          (cMaxTal = getMaxTalent(ascLevel[0])),
+                          (dMaxTal = cMaxTal),
+                          (ascLevel[1] = ascLevel[0]))
+                        : level[0]++,
+                      (cMaxTal = getMaxTalent(ascLevel[0]))
                   "
                   class="
                     w-1/3
@@ -383,11 +496,20 @@ const getMaxTalent = () => {
                 </button>
                 <button
                   @click="
-                    level[0] >= 80
-                      ? ((level[0] = 90), (level[1] = 90))
-                      : level[0] + 10 >= level[1]
-                      ? ((level[0] = level[0] + 10), (level[1] = level[0]))
-                      : (level[0] = level[0] + 10)
+                    (ascLevel[0] = getAscension(level[0], level[0] + 10)),
+                      level[0] >= 80
+                        ? ((level[0] = 90),
+                          (level[1] = 90),
+                          (ascLevel[1] = ascLevel[0]),
+                          (dMaxTal = 10))
+                        : level[0] + 10 >= level[1]
+                        ? ((level[0] += 10),
+                          (level[1] = level[0]),
+                          (cMaxTal = getMaxTalent(ascLevel[0])),
+                          (dMaxTal = cMaxTal),
+                          (ascLevel[1] = ascLevel[0]))
+                        : (level[0] += 10),
+                      (cMaxTal = getMaxTalent(ascLevel[0]))
                   "
                   class="
                     w-1/3
@@ -413,6 +535,51 @@ const getMaxTalent = () => {
               "
             >
               <p class="py-1 border-black border-b-2">Desired Level</p>
+              <span class="text-lg" v-for="(num, name, index) in 6" :key="num">
+                <button
+                  @click="
+                    (ascLevel[1] = num),
+                      (level[1] = setNewLevel(ascLevel[1], level[1])),
+                      (dMaxTal = getMaxTalent(ascLevel[1])),
+                      dTal[0] > dMaxTal ? (dTal[0] = dMaxTal) : '',
+                      dTal[1] > dMaxTal ? (dTal[1] = dMaxTal) : '',
+                      dTal[2] > dMaxTal ? (dTal[2] = dMaxTal) : ''
+                  "
+                  class="
+                    px-1
+                    mx-px
+                    rounded-full
+                    text-black
+                    font-bold
+                    bg-blue-100 bg-opacity-20
+                  "
+                  v-if="num > ascLevel[1]"
+                >
+                  ✧
+                </button>
+                <button
+                  @click="
+                    ascLevel[1] == num ? ascLevel[1]-- : (ascLevel[1] = num),
+                      (level[1] = setNewLevel(ascLevel[1], level[1])),
+                      level[0] > level[1] || ascLevel[0] > ascLevel[1]
+                        ? ((level[0] = level[1]),
+                          (ascLevel[0] = ascLevel[1]),
+                          (dMaxTal = getMaxTalent(ascLevel[1])),
+                          (cMaxTal = dMaxTal))
+                        : (dMaxTal = getMaxTalent(ascLevel[1])),
+                      dTal[0] > dMaxTal ? (dTal[0] = dMaxTal) : '',
+                      cTal[0] > dTal[0] ? (cTal[0] = dTal[0]) : '',
+                      dTal[1] > dMaxTal ? (dTal[1] = dMaxTal) : '',
+                      cTal[1] > dTal[1] ? (cTal[1] = dTal[1]) : '',
+                      dTal[2] > dMaxTal ? (dTal[2] = dMaxTal) : '',
+                      cTal[2] > dTal[2] ? (cTal[2] = dTal[2]) : ''
+                  "
+                  class="px-1 mx-px rounded-full bg-blue-100 bg-opacity-20"
+                  v-else
+                >
+                  ✦
+                </button>
+              </span>
               <div
                 class="
                   text-center
@@ -426,11 +593,23 @@ const getMaxTalent = () => {
               >
                 <button
                   @click="
-                    level[1] <= 10
-                      ? ((level[0] = 1), (level[1] = 1))
-                      : level[1] - 10 <= level[0]
-                      ? ((level[1] = level[1] - 10), (level[0] = level[1]))
-                      : (level[1] = level[1] - 10)
+                    (ascLevel[1] = getAscension(level[1], level[1] - 10)),
+                      level[1] <= 10
+                        ? ((level[0] = 1), (level[1] = 1))
+                        : level[1] - 10 <= level[0]
+                        ? ((level[1] -= 10),
+                          (level[0] = level[1]),
+                          (dMaxTal = getMaxTalent(ascLevel[1])),
+                          (cMaxTal = dMaxTal),
+                          (ascLevel[0] = ascLevel[1]))
+                        : (level[1] -= 10),
+                      (dMaxTal = getMaxTalent(ascLevel[1])),
+                      dTal[0] > dMaxTal ? (dTal[0] = dMaxTal) : '',
+                      cTal[0] > dTal[0] ? (cTal[0] = dTal[0]) : '',
+                      dTal[1] > dMaxTal ? (dTal[1] = dMaxTal) : '',
+                      cTal[1] > dTal[1] ? (cTal[1] = dTal[1]) : '',
+                      dTal[2] > dMaxTal ? (dTal[2] = dMaxTal) : '',
+                      cTal[2] > dTal[2] ? (cTal[2] = dTal[2]) : ''
                   "
                   class="
                     w-1/3
@@ -447,11 +626,23 @@ const getMaxTalent = () => {
                 </button>
                 <button
                   @click="
-                    level[1] <= 1
-                      ? (level[1] = 1)
-                      : level[1] - 1 <= level[0]
-                      ? (level[1]--, (level[0] = level[1]))
-                      : level[1]--
+                    (ascLevel[1] = getAscension(level[1], level[1] - 1)),
+                      level[1] <= 1
+                        ? (level[1] = 1)
+                        : level[1] - 1 <= level[0]
+                        ? (level[1]--,
+                          (level[0] = level[1]),
+                          (dMaxTal = getMaxTalent(ascLevel[1])),
+                          (cMaxTal = dMaxTal),
+                          (ascLevel[0] = ascLevel[1]))
+                        : level[1]--,
+                      (dMaxTal = getMaxTalent(ascLevel[1])),
+                      dTal[0] > dMaxTal ? (dTal[0] = dMaxTal) : '',
+                      cTal[0] > dTal[0] ? (cTal[0] = dTal[0]) : '',
+                      dTal[1] > dMaxTal ? (dTal[1] = dMaxTal) : '',
+                      cTal[1] > dTal[1] ? (cTal[1] = dTal[1]) : '',
+                      dTal[2] > dMaxTal ? (dTal[2] = dMaxTal) : '',
+                      cTal[2] > dTal[2] ? (cTal[2] = dTal[2]) : ''
                   "
                   class="
                     w-1/3
@@ -466,7 +657,11 @@ const getMaxTalent = () => {
                 </button>
                 <p class="w-1/3 bg-gray-900">{{ level[1] }}</p>
                 <button
-                  @click="level[1] >= 90 ? (level[1] = 90) : level[1]++"
+                  @click="
+                    (ascLevel[1] = getAscension(level[1], level[1] + 1)),
+                      level[1] >= 90 ? (level[1] = 90) : level[1]++,
+                      (dMaxTal = getMaxTalent(ascLevel[1]))
+                  "
                   class="
                     w-1/3
                     transition
@@ -480,9 +675,11 @@ const getMaxTalent = () => {
                 </button>
                 <button
                   @click="
-                    level[1] >= 80
-                      ? (level[1] = 90)
-                      : (level[1] = level[1] + 10)
+                    (ascLevel[1] = getAscension(level[1], level[1] + 10)),
+                      level[1] >= 80
+                        ? (level[1] = 90)
+                        : (level[1] = level[1] + 10),
+                      (dMaxTal = getMaxTalent(ascLevel[1]))
                   "
                   class="
                     w-1/3
