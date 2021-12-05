@@ -1573,6 +1573,257 @@ const SPECIALTY_ITEMS = {
   },
 };
 
+const MOB_MATERIAL = {
+  Slime: {
+    name: "Slime",
+    mobCharacters: ["Venti", "Xiao", "Zhongli", "Lisa", "Xiangling"],
+    mob_mats: {
+      levelOne: {
+        name: "Slime Condensate",
+        image: "/ascension/common/slime-condensate.png",
+      },
+      levelTwo: {
+        name: "Slime Secretions",
+        image: "/ascension/common/slime-secretions.png",
+      },
+      levelThree: {
+        name: "Slime Concentrate",
+        image: "/ascension/common/slime-concentrate.png",
+      },
+    },
+  },
+  "Hilichurl Masks": {
+    name: "Hilichurl Masks",
+    mobCharacters: [
+      "Eula",
+      "Jean",
+      "Chongyun",
+      "Sara",
+      "Noelle",
+      "Razor",
+      "Xingqiu",
+    ],
+    mob_mats: {
+      levelOne: {
+        name: "Damaged Mask",
+        image: "/ascension/common/damaged-mask.png",
+      },
+      levelTwo: {
+        name: "Stained Mask",
+        image: "/ascension/common/stained-mask.png",
+      },
+      levelThree: {
+        name: "Ominous Mask",
+        image: "/ascension/common/ominous-mask.png",
+      },
+    },
+  },
+  "Samachurl Scrolls": {
+    name: "Samachurl Scrolls",
+    mobCharacters: ["Albedo", "Klee", "Qiqi", "Yoimiya", "Barbara"],
+    mob_mats: {
+      levelOne: {
+        name: "Divining Scroll",
+        image: "/ascension/common/divining-scroll.png",
+      },
+      levelTwo: {
+        name: "Sealed Scroll",
+        image: "/ascension/common/sealed-scroll.png",
+      },
+      levelThree: {
+        name: "Forbidden Curse Scroll",
+        image: "/ascension/common/forbidden-curse-scroll.png",
+      },
+    },
+  },
+  "Hilichurl Arrowheads": {
+    name: "Hilichurl Arrowheads",
+    mobCharacters: ["Amber", "Diona", "Fischl"],
+    mob_mats: {
+      levelOne: {
+        name: "Firm Arrowhead",
+        image: "/ascension/common/firm-arrowhead.png",
+      },
+      levelTwo: {
+        name: "Sharp Arrowhead",
+        image: "/ascension/common/sharp-arrowhead.png",
+      },
+      levelThree: {
+        name: "Weathered Arrowhead",
+        image: "/ascension/common/weathered-arrowhead.png",
+      },
+    },
+  },
+  "Fatui Insignia": {
+    name: "Fatui Insignia",
+    mobCharacters: ["Diluc", "Tartaglia", "Ningguang", "Rosaria"],
+    mob_mats: {
+      levelOne: {
+        name: "Recruit's Insignia",
+        image: "/ascension/common/recruits-insignia.png",
+      },
+      levelTwo: {
+        name: "Sergeant's Insignia",
+        image: "/ascension/common/sergeants-insignia.png",
+      },
+      levelThree: {
+        name: "Lieutenant's Insignia",
+        image: "/ascension/common/lieutenants-insignia.png",
+      },
+    },
+  },
+  "Treasure Hoarder Insignias": {
+    name: "Treasure Hoarder Insignias",
+    mobCharacters: ["Kazuha", "Beidou", "Bennett", "Kaeya", "Xinyan", "Yanfei"],
+    mob_mats: {
+      levelOne: {
+        name: "Treasure Hoarder Insignia",
+        image: "/ascension/common/treasure-hoarder-insignia.png",
+      },
+      levelTwo: {
+        name: "Silver Raven Insignia",
+        image: "/ascension/common/silver-raven-insignia.png",
+      },
+      levelThree: {
+        name: "Golden Raven Insignia",
+        image: "/ascension/common/golden-raven-insignia.png",
+      },
+    },
+  },
+  "Whopperflower Nectar": {
+    name: "Whopperflower Nectar",
+    mobCharacters: ["Ganyu", "Hu Tao", "Keqing", "Mona", "Sayu", "Sucrose"],
+    mob_mats: {
+      levelOne: {
+        name: "Whopperflower Nectar",
+        image: "/ascension/common/whopperflower-nectar.png",
+      },
+      levelTwo: {
+        name: "Shimmering Nectar",
+        image: "/ascension/common/shimmering-nectar.png",
+      },
+      levelThree: {
+        name: "Energy Nectar",
+        image: "/ascension/common/energy-nectar.png",
+      },
+    },
+  },
+  "Nobushi Handguards": {
+    name: "Nobushi Handguards",
+    mobCharacters: ["Ayaka", "Raiden"],
+    mob_mats: {
+      levelOne: {
+        name: "Old Handguard",
+        image: "/ascension/common/old-handguard.png",
+      },
+      levelTwo: {
+        name: "Kageuchi Handguard",
+        image: "/ascension/common/kageuchi-handguard.png",
+      },
+      levelThree: {
+        name: "Famed Handguard",
+        image: "/ascension/common/famed-handguard.png",
+      },
+    },
+  },
+  "Spectral Cores": {
+    name: "Spectral Cores",
+    mobCharacters: ["Aloy", "Kokomi"],
+    mob_mats: {
+      levelOne: {
+        name: "Spectral Husk",
+        image: "/ascension/common/spectral-heart.png",
+      },
+      levelTwo: {
+        name: "Spectral Heart",
+        image: "/ascension/common/spectral-husk.png",
+      },
+      levelThree: {
+        name: "Spectral Nucleus",
+        image: "/ascension/common/spectral-nucleus.png",
+      },
+    },
+  },
+};
+
+const WEEKLY_MATERIAL = {
+  "Dvalin's Plume": {
+    name: "Dvalin's Plume",
+    image: "/ascension/talents/dvalins-plume.png",
+    weekCharacters: ["Diluc", "Jean", "Bennett"],
+  },
+  "Dvalin's Claw": {
+    name: "Dvalin's Claw",
+    image: "/ascension/talents/dvalins-claw.png",
+    weekCharacters: ["Lisa", "Noelle", "Razor", "Xiangling"],
+  },
+  "Dvalin's Sigh": {
+    name: "Dvalin's Sigh",
+    image: "/ascension/talents/dvalins-sigh.png",
+    weekCharacters: ["Amber", "Beidou", "Chongyun"],
+  },
+  "Tail of Boreas": {
+    name: "Tail of Boreas",
+    image: "/ascension/talents/tail-of-boreas.png",
+    weekCharacters: ["Qiqi", "Venti", "Xingqiu"],
+  },
+  "Ring of Boreas": {
+    name: "Ring of Boreas",
+    image: "/ascension/talents/ring-of-boreas.png",
+    weekCharacters: ["Keqing", "Klee", "Mona", "Barbara"],
+  },
+  "Spirit Locket of Boreas": {
+    name: "Spirit Locket of Boreas",
+    image: "/ascension/talents/spirit-locket-of-boreas.png",
+    weekCharacters: ["Fischl", "Kaeya", "Ningguang", "Sucrose"],
+  },
+  "Tusk of Monoceros Caeli": {
+    name: "Tusk of Monoceros Caeli",
+    image: "/ascension/talents/tusk-of-monoceros-caeli.png",
+    weekCharacters: ["Albedo", "Zhongli", "Xinyan"],
+  },
+  "Shard of Foul Legacy": {
+    name: "Shard of Foul Legacy",
+    image: "/ascension/talents/shard-of-a-foul-legacy.png",
+    weekCharacters: ["Hu Tao", "Tartaglia", "Diona"],
+  },
+  "Shadow of the Warrior": {
+    name: "Shadow of the Warrior",
+    image: "/ascension/talents/shadow-of-the-warrior.png",
+    weekCharacters: ["Ganyu", "Xiao", "Rosaria"],
+  },
+  "Dragon Lord's Crown": {
+    name: "Dragon Lord's Crown",
+    image: "/ascension/talents/dragon-lords-crown.png",
+    weekCharacters: ["Eula", "Yoimiya"],
+  },
+  "Bloodjade Branch": {
+    name: "Bloodjade Branch",
+    image: "/ascension/talents/bloodjade-branch.png",
+    weekCharacters: ["Ayaka", "Yanfei"],
+  },
+  "Gilded Scale": {
+    name: "Gilded Scale",
+    image: "/ascension/talents/gilded-scale.png",
+    weekCharacters: ["Kazuha", "Sayu"],
+  },
+  "Molten Moment": {
+    name: "Molten Moment",
+    image: "/ascension/talents/molten-moment.png",
+    weekCharacters: ["Aloy", "Raiden"],
+  },
+  "Hellfire Butterfly": {
+    name: "Hellfire Butterfly",
+    image: "/ascension/talents/hellfire-butterfly.png",
+    weekCharacters: ["Kokomi"],
+  },
+  "Ashen Heart": {
+    name: "Ashen Heart",
+    image: "/ascension/talents/ashen-heart.png",
+    weekCharacters: ["Sara"],
+  },
+};
+
 export const useLocal = () => {
   const getCharacter = (picked) => {
     const myCharacter = ALL_CHARACTERS[picked];
@@ -1636,6 +1887,34 @@ export const useLocal = () => {
     return SPECIALTY_ITEMS[keys[i]];
   };
 
+  const getWeekly = (picked) => {
+    const keys = Object.keys(WEEKLY_MATERIAL);
+    let i = 0;
+    keys.every((key, index) => {
+      if (WEEKLY_MATERIAL[key].weekCharacters.includes(picked)) {
+        return false;
+      } else {
+        i++;
+        return true;
+      }
+    });
+    return WEEKLY_MATERIAL[keys[i]];
+  };
+
+  const getMob = (picked) => {
+    const keys = Object.keys(MOB_MATERIAL);
+    let i = 0;
+    keys.every((key, index) => {
+      if (MOB_MATERIAL[key].mobCharacters.includes(picked)) {
+        return false;
+      } else {
+        i++;
+        return true;
+      }
+    });
+    return MOB_MATERIAL[keys[i]];
+  };
+
   return {
     ALL_CHARACTERS,
     getCharacter,
@@ -1643,5 +1922,7 @@ export const useLocal = () => {
     getJewels,
     getBoss,
     getSpecialty,
+    getWeekly,
+    getMob,
   };
 };
