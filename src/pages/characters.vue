@@ -27,7 +27,14 @@ const { ALL_CHARACTERS } = useLocal();
         <router-link
           v-for="x in ALL_CHARACTERS"
           :key="x"
-          class="m-2 w-auto bg-gray-200 rounded-lg drop-shadow-lg"
+          class="
+            m-2
+            w-auto
+            bg-gray-200
+            rounded-lg
+            drop-shadow-lg
+            hover:scale-105
+          "
           :to="`/characters/${x.name}`"
         >
           <div class="absolute w-7">
