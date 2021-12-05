@@ -145,9 +145,9 @@ const setNewLevel = (asc, cLevel) => {
         </p>
       </div>
       <!-- Interactive Area -->
-      <div class="rounded-r-lg grid grid-rows-3 w-2/3 text-white">
+      <div class="rounded-r-lg grid grid-rows-5 w-2/3 text-white">
         <!-- Current Talents -->
-        <div class="bg-gray-700 text-center rounded-tr-md">
+        <div class="bg-gray-700 text-center rounded-tr-md row-span-2 lg:pt-3 hover:scale-105">
           <p class="underline pt-3">Talents (Current)</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
@@ -252,7 +252,7 @@ const setNewLevel = (asc, cLevel) => {
           </div>
         </div>
         <!-- Desired Talents -->
-        <div class="bg-gray-800 text-center rounded-tr-md">
+        <div class="bg-gray-800 text-center row-span-2 lg:pt-3 hover:scale-105">
           <p class="underline pt-3">Talents (Desired)</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
@@ -357,19 +357,16 @@ const setNewLevel = (asc, cLevel) => {
           </div>
         </div>
         <!-- Level/Ascension-->
-        <div
-          class="bg-gray-700 px-5 container justify-evenly flex rounded-br-md"
-        >
+        <div class="bg-gray-700 px-5 rounded-br-md row-span-1 hover:scale-105 hover:shadow-lg">
           <!-- Level -->
-          <div
-            class="self-center container flex flex-col space-y-5 w-1/2 p-2 \"
-          >
-            <p class="text-center pb-5 underline">Character Level</p>
+          <p class="text-center underline pt-2">Character Level</p>
+          <div class="self-center p-2 grid grid-cols-2 gap-5">
+            <!-- Current Level -->
             <div
-              class="rounded-md text-center h-3/4 border-2 border-black w-full"
+              class="bg-gray-500 rounded-md text-center border-2 border-black"
             >
               <p class="py-1 border-black border-b-2">Current Level</p>
-              <span class="text-lg" v-for="(num, name, index) in 6" :key="num">
+              <span class="text-lg" v-for="num in 6" :key="num">
                 <button
                   @click="
                     (ascLevel[0] = num),
@@ -393,7 +390,7 @@ const setNewLevel = (asc, cLevel) => {
                     rounded-full
                     text-black
                     font-bold
-                    bg-blue-100 bg-opacity-20
+                    bg-blue-100 bg-opacity-30
                   "
                   v-if="num > ascLevel[0]"
                 >
@@ -417,12 +414,11 @@ const setNewLevel = (asc, cLevel) => {
               <div
                 class="
                   text-center
-                  h-1/4
                   rounded-b-md
                   container
                   mx-auto
                   flex
-                  justify-evenly
+                  justify-eve
                 "
               >
                 <button
@@ -525,17 +521,12 @@ const setNewLevel = (asc, cLevel) => {
                 </button>
               </div>
             </div>
+            <!-- Desired Level -->
             <div
-              class="
-                bg-gray-600
-                rounded-md
-                text-center
-                h-3/4
-                border-2 border-black
-              "
+              class="bg-gray-500 rounded-md text-center border-2 border-black"
             >
               <p class="py-1 border-black border-b-2">Desired Level</p>
-              <span class="text-lg" v-for="(num, name, index) in 6" :key="num">
+              <span class="text-lg" v-for="num in 6" :key="num">
                 <button
                   @click="
                     (ascLevel[1] = num),
@@ -551,7 +542,7 @@ const setNewLevel = (asc, cLevel) => {
                     rounded-full
                     text-black
                     font-bold
-                    bg-blue-100 bg-opacity-20
+                    bg-blue-100 bg-opacity-30
                   "
                   v-if="num > ascLevel[1]"
                 >
@@ -583,7 +574,6 @@ const setNewLevel = (asc, cLevel) => {
               <div
                 class="
                   text-center
-                  h-1/4
                   rounded-b-md
                   container
                   mx-auto
@@ -693,59 +683,6 @@ const setNewLevel = (asc, cLevel) => {
                 >
                   +10
                 </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Divider -->
-          <div class="bg-black w-px"></div>
-          <!-- Ascension -->
-          <div class="text-center self-center">
-            <div class="container flex space-x-3 px-3 py-2">
-              <div
-                class="bg-gray-400 rounded-md text-center h-3/4 border-gray-700"
-              >
-                <p class="underline px-6">Ascension Level</p>
-                <div
-                  class="
-                    text-center
-                    bg-white
-                    h-1/4
-                    rounded-b-md
-                    container
-                    mx-auto
-                    flex
-                    justify-evenly
-                  "
-                >
-                  <button
-                    class="
-                      w-1/3
-                      transition
-                      duration-300
-                      ease-in-out
-                      bg-red-500
-                      hover:bg-red-600 hover:text-black
-                      rounded-bl-md
-                    "
-                  >
-                    -
-                  </button>
-                  <p class="w-1/3 bg-white">10</p>
-                  <button
-                    class="
-                      w-1/3
-                      rounded-br-md
-                      transition
-                      duration-300
-                      ease-in-out
-                      bg-green-500
-                      hover:bg-green-600 hover:text-black
-                    "
-                  >
-                    +
-                  </button>
-                </div>
               </div>
             </div>
           </div>
