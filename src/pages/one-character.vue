@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from "vue";
 import { useRoute } from "vue-router";
-//import { useAPI } from "../composable/useAPI";
 import { useLocal } from "../composable/useLocal";
 
 const route = useRoute();
