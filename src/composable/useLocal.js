@@ -1059,6 +1059,28 @@ const ALL_ELEMENTS = {
       },
     },
   },
+  Dendro: {
+    elementCharacters: [""],
+    name: "Dendro",
+    gems: {
+      levelOne: {
+        name: "Nagadus Emerald Sliver",
+        image: "/ascension/jewels/nagadus-emerald-sliver.png",
+      },
+      levelTwo: {
+        name: "Nagadus Emerald Fragment",
+        image: "/ascension/jewels/nagadus-emerald-fragment.png",
+      },
+      levelThree: {
+        name: "Nagadus Emerald Chunk",
+        image: "/ascension/jewels/nagadus-emerald-chunk.png",
+      },
+      levelFour: {
+        name: "Nagadus Emerald Gemstone",
+        image: "/ascension/jewels/nagadus-emerald-gemstone.png",
+      },
+    },
+  },
   Pyro: {
     elementCharacters: [
       "Amber",
@@ -1917,6 +1939,7 @@ export const useLocal = () => {
 
   return {
     ALL_CHARACTERS,
+    ALL_ELEMENTS,
     getCharacter,
     getBooks,
     getJewels,
