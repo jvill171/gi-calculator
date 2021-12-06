@@ -281,6 +281,7 @@ const weeklyBookGet = (c, d) => {
           "
         >
           <p class="underline pt-3">Talents (Current)</p>
+          <p class="bg-black ">Max: {{cMaxTal}}</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
               v-for="(cTalents, name, index) in thisCharacter.skillTalents"
@@ -386,6 +387,7 @@ const weeklyBookGet = (c, d) => {
         <!-- Desired Talents -->
         <div class="bg-gray-800 text-center row-span-2 lg:pt-3 hover:scale-105">
           <p class="underline pt-3">Talents (Desired)</p>
+          <p class="bg-black ">Max: {{dMaxTal}}</p>
           <div class="container flex space-x-3 px-3 py-2">
             <div
               v-for="(cTalents, name, index) in thisCharacter.skillTalents"
