@@ -46,7 +46,7 @@ const addRemItem = (f, s) => {
       items-center
       justify-center
       min-h-screen-nonav
-      text-center 
+      text-center
     "
   >
     <div class="absolute top-16 w-full">
@@ -70,7 +70,13 @@ const addRemItem = (f, s) => {
           <ul class="bg-gray-300 flex flex-wrap justify-center">
             <button
               @click="filterOut = addRemItem(f, [...filterOut])"
-              class="px-2 m-1 rounded-full ring-inset ring-black ring-2"
+              class="
+                px-2
+                m-1
+                rounded-full
+                ring-inset ring-black ring-2
+                hover:scale-105
+              "
               v-for="f in myArr"
               :key="f"
               :class="
