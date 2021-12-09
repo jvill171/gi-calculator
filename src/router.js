@@ -3,9 +3,9 @@ import useAuth from "./composable/useAuth";
 
 import Index from "./pages/index.vue";
 import Characters from "./pages/characters.vue";
+import Community from "./pages/community.vue";
+import Profile from "./pages/profile.vue";
 import Login from "./pages/login.vue";
-import AutoCalc from "./pages/auto-calc.vue";
-import Backpack from "./pages/backpack.vue";
 import OneCharacter from "./pages/one-character.vue";
 import NotFound from "./pages/404.vue";
 
@@ -28,20 +28,14 @@ const routes = [
     component: Login,
   },
   {
-    path: "/backpack",
-    name: "Backpack",
-    component: Backpack,
-    beforeEnter: (to, from, next) => {
-      if (isAuthenticated.value) {
-        next();
-      }
-      next("/login");
-    },
-  },
-  {
     path: "/characters/:name",
     name: "Character",
     component: OneCharacter,
+  },
+  {
+    path: "/community",
+    name: "Community",
+    component: Community,
     // beforeEnter: (to, from, next) => {
     //     if(isAuthenticated.value){
     //         next();
@@ -50,15 +44,15 @@ const routes = [
     // },
   },
   {
-    path: "/auto-calc",
-    name: "Auto-Calc",
-    component: AutoCalc,
-    beforeEnter: (to, from, next) => {
-      if (isAuthenticated.value) {
-        next();
-      }
-      next("/login");
-    },
+    path: "/profile",
+    name: "Profile",
+    component: Profile,
+    // beforeEnter: (to, from, next) => {
+    //     if(isAuthenticated.value){
+    //         next();
+    //     }
+    //     next("/login");
+    // },
   },
   {
     path: "/:pathMatch(.*)*",

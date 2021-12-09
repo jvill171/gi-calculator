@@ -20,6 +20,15 @@ module.exports = {
         "4_star": "url('../../rarity/4_star.png')",
         "5_star": "url('../../rarity/5_star.png')",
       },
+      animation: {
+        pulseColor: "wiggle 1s ease-in-out infinite",
+      },
+      keyframes: {
+        pulseColor: {
+          "0%, 100%": { transform: "rotate(-1deg)", backgroundColor: "white" },
+          "50%": { transform: "rotate(1deg)", backgroundColor: "#b5d5ff" },
+        },
+      },
     },
   },
   variants: {

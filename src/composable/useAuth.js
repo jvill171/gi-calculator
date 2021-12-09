@@ -12,6 +12,7 @@ import { firebaseApp, firebaseAuth } from "./useFirebase";
 const isAuthenticated = ref(false);
 
 const user = ref("");
+const favElement = ref("")
 
 const useAuth = () => {
     const googleLogin = async () =>{

@@ -58,7 +58,7 @@ const loggingOut = () => {
             </li>
           </router-link>
           <div v-else class="flex items-center">
-            <router-link to="/backpack">
+            <router-link to="/community">
               <li
                 class="
                   h-full
@@ -67,10 +67,10 @@ const loggingOut = () => {
                   hover:cursor-pointer hover:bg-gray-300 hover:text-black
                 "
               >
-                Backpack
+                Chat
               </li>
             </router-link>
-            <router-link to="/auto-calc">
+            <router-link to="/profile">
               <li
                 class="
                   h-full
@@ -79,7 +79,7 @@ const loggingOut = () => {
                   hover:cursor-pointer hover:bg-gray-300 hover:text-black
                 "
               >
-                Auto-Calc
+                Profile
               </li>
             </router-link>
             <button @click="loggingOut">
