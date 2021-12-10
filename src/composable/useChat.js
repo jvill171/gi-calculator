@@ -33,11 +33,27 @@ const useChat = () => {
     });
   });
 
+  const makeProfile = async () => {
+    const q = await getDocs(prefQuery);
+    //create the message data
+    await addDoc(prefCollection, {
+      author: user.value,
+      myChar: "Traveler",
+      myElem: "None",
+    });
+  };
+
   const getProfile = onSnapshot(prefQuery, (querySnapshot) => {
     myProfileInfo.value = [];
     querySnapshot.forEach((doc) => {
       myProfileInfo.value.push(doc.data().myElem, doc.data().myChar, doc.id);
     });
+    if (myProfileInfo.value.length == 0) {
+      makeProfile();
+      querySnapshot.forEach((doc) => {
+        myProfileInfo.value.push(doc.data().myElem, doc.data().myChar, doc.id);
+      });
+    }
   });
 
   const sendMessage = async (message) => {
@@ -66,16 +82,13 @@ const useChat = () => {
       element: myE,
     });
   };
-  // // prettier-ignore
   const updateProfile = async (newChar, newElem, myID) => {
     const docRef = doc(db, "preferences", myID);
-
     await updateDoc(docRef, {
       myChar: newChar,
       myElem: newElem,
     });
   };
-  // // prettier-ignore
   return {
     messages,
     myProfileInfo,
