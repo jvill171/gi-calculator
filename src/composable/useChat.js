@@ -5,8 +5,10 @@ import {
   orderBy,
   onSnapshot,
   addDoc,
-  where,
   getDocs,
+  updateDoc,
+  where,
+  doc,
 } from "firebase/firestore";
 
 import { db } from "./useFirebase";
@@ -15,12 +17,14 @@ import useAuth from "./useAuth";
 const { user } = useAuth();
 
 const messages = ref([]);
+const myProfileInfo = ref([]);
 
 const useChat = () => {
   const chatCollection = collection(db, "chat");
   const prefCollection = collection(db, "preferences");
 
   const chatQuery = query(chatCollection, orderBy("createdAt", "desc"));
+  const prefQuery = query(prefCollection, where("author", "==", user.value));
 
   const unsubscribe = onSnapshot(chatQuery, (querySnapshot) => {
     messages.value = [];
@@ -29,27 +33,31 @@ const useChat = () => {
     });
   });
 
+  const getProfile = onSnapshot(prefQuery, (querySnapshot) => {
+    myProfileInfo.value = [];
+    querySnapshot.forEach((doc) => {
+      myProfileInfo.value.push(doc.data().myElem, doc.data().myChar, doc.id);
+    });
+  });
+
   const sendMessage = async (message) => {
-    const myImage = query(prefCollection, where("author", "==", user.value));
-    const q = await getDocs(myImage);
+    const q = await getDocs(prefQuery);
     var myCh = "";
     var myE = "";
     q.forEach((doc) => {
       myCh += doc.data().myChar;
       myE += doc.data().myElem;
     });
-    console.log("Yo");
-    console.log(myCh);
-    console.log("bye");
     if (myCh == "") {
       myCh = "/characters_icon/traveler.png";
     } else {
+      myCh = myCh.replace(/\s+/g, "-");
       myCh = `/characters_icon/${myCh.toLocaleLowerCase()}.png`;
     }
     if (myE == "") {
       myE = "None";
     }
-
+    //create the message data
     await addDoc(chatCollection, {
       text: message,
       author: user.value,
@@ -58,8 +66,24 @@ const useChat = () => {
       element: myE,
     });
   };
+  // // prettier-ignore
+  const updateProfile = async (newChar, newElem, myID) => {
+    const docRef = doc(db, "preferences", myID);
 
-  return { messages, unsubscribe, sendMessage };
+    await updateDoc(docRef, {
+      myChar: newChar,
+      myElem: newElem,
+    });
+  };
+  // // prettier-ignore
+  return {
+    messages,
+    myProfileInfo,
+    unsubscribe,
+    sendMessage,
+    getProfile,
+    updateProfile,
+  };
 };
 
 export default useChat;

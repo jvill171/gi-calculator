@@ -36,23 +36,23 @@ const routes = [
     path: "/community",
     name: "Community",
     component: Community,
-    // beforeEnter: (to, from, next) => {
-    //     if(isAuthenticated.value){
-    //         next();
-    //     }
-    //     next("/login");
-    // },
+    beforeEnter: (to, from, next) => {
+        if(isAuthenticated.value){
+            next();
+        }
+        next("/login");
+    },
   },
   {
     path: "/profile",
     name: "Profile",
     component: Profile,
-    // beforeEnter: (to, from, next) => {
-    //     if(isAuthenticated.value){
-    //         next();
-    //     }
-    //     next("/login");
-    // },
+    beforeEnter: (to, from, next) => {
+        if(isAuthenticated.value){
+            next();
+        }
+        next("/login");
+    },
   },
   {
     path: "/:pathMatch(.*)*",

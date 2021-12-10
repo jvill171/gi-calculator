@@ -187,7 +187,6 @@ const mobMoraXPGet = (lvl, asc, cT, dT) => {
   let thisMora = 0;
   let thisMob = [0, 0, 0];
 
-  console.log(`lvl = ${lvl}\nasc=${asc}\ncT=${cT}\ndT=${dT}\n`);
   //Level Up Cost
   for (; lvl[0] < lvl[1]; lvl[0]++) {
     thisXP += chartXP[lvl[0]];

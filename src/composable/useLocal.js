@@ -1040,6 +1040,7 @@ const ALL_ELEMENTS = {
   Anemo: {
     elementCharacters: ["Jean", "Kazuha", "Sayu", "Sucrose", "Venti", "Xiao"],
     name: "Anemo",
+    image: "/elements/anemo.png",
     gems: {
       levelOne: {
         name: "Vayuda Turquoise Sliver",
@@ -1062,6 +1063,7 @@ const ALL_ELEMENTS = {
   Dendro: {
     elementCharacters: [""],
     name: "Dendro",
+    image: "/elements/dendro.png",
     gems: {
       levelOne: {
         name: "Nagadus Emerald Sliver",
@@ -1094,6 +1096,7 @@ const ALL_ELEMENTS = {
       "Yoimiya",
     ],
     name: "Pyro",
+    image: "/elements/pyro.png",
     gems: {
       levelOne: {
         name: "Shivada Jade Sliver",
@@ -1116,6 +1119,7 @@ const ALL_ELEMENTS = {
   Geo: {
     elementCharacters: ["Albedo", "Ningguang", "Noelle", "Zhongli"],
     name: "Geo",
+    image: "/elements/geo.png",
     gems: {
       levelOne: {
         name: "Prithiva Topaz Sliver",
@@ -1138,6 +1142,7 @@ const ALL_ELEMENTS = {
   Hydro: {
     elementCharacters: ["Barbara", "Mona", "Kokomi", "Tartaglia", "Xingqiu"],
     name: "Hydro",
+    image: "/elements/hydro.png",
     gems: {
       levelOne: {
         name: "Varunada Lazurite Sliver",
@@ -1170,6 +1175,7 @@ const ALL_ELEMENTS = {
       "Rosaria",
     ],
     name: "Cryo",
+    image: "/elements/cryo.png",
     gems: {
       levelOne: {
         name: "Shivada Jade Sliver",
@@ -1200,6 +1206,7 @@ const ALL_ELEMENTS = {
       "Razor",
     ],
     name: "Electro",
+    image: "/elements/electro.png",
     gems: {
       levelOne: {
         name: "Vajrada Amethyst Sliver",

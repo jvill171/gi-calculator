@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 import { useLocal } from "../composable/useLocal";
 
-const { ALL_CHARACTERS, ALL_ELEMENTS } = useLocal();
+const { ALL_CHARACTERS } = useLocal();
 
 const myArr = [
   "Anemo",
