@@ -5,7 +5,7 @@
 @layer base {
   @font-face {
     font-family: "genshinFont";
-    src: url("../public/fonts/ja-jp.ttf") format("truetype"),
-      url("../public/fonts/zh-cn.ttf") format("truetype");
+    src: url("../fonts/ja-jp.ttf") format("truetype"),
+      url("../fonts/zh-cn.ttf") format("truetype");
   }
 }
