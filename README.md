@@ -2,7 +2,7 @@
 This app uses Vue3.js, Vite, and Firebase in order create a simple material calculator with an embedded, live, chat! 
 
 <div>
-    <img src="images/gic-home.png" alt="Image 1" style="width: 80%; height: auto;">
+    <img src="images/gic-home.png" alt="Home Page" style="width: 80%;">
 </div>
 
 ## Features 
@@ -16,23 +16,22 @@ This app uses Vue3.js, Vite, and Firebase in order create a simple material calc
 ### _Click to expand/collapse the screenshots:_
 <details>
   <summary>Characters Page</summary>
-  <img src="images/gic-characters.png" alt="Characters Page" style="width: 100%; height: auto;">
-  
+  <img src="images/gic-characters.png" alt="Characters Page">
 </details>
+
 <details>
   <summary>Chat Page</summary>
-  <img src="images/gic-chat.png" alt="Chat Page" style="width: 100%; height: auto;">
-  
+  <img src="images/gic-chat.png" alt="Chat Page">
 </details>
+
 <details>
   <summary>Profile Page</summary>
-  <img src="images/gic-profile.png" alt="Profile Page" style="width: 100%; height: auto;">
-  
+  <img src="images/gic-profile.png" alt="Profile Page">
 </details>
+
 <details>
   <summary>Material Calculator Page</summary>
-  <img src="images/gic-calculator.png" alt="Material Calculator Page" style="width: 100%; height: auto;">
-  
+  <img src="images/gic-calculator.png" alt="Material Calculator Page">
 </details>
 
 
